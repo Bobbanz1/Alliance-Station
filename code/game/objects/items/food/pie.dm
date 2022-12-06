@@ -6,7 +6,7 @@
 	max_volume = 80
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("pie" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/pieslice
@@ -16,7 +16,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("pie" = 1, "uncertainty" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 
 /obj/item/food/pie/plain
 	name = "plain pie"
@@ -24,7 +24,7 @@
 	icon_state = "pie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("pie" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 	burns_in_oven = TRUE
 
 /obj/item/food/pie/cream
@@ -33,7 +33,7 @@
 	icon_state = "pie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
+	foodtypes = GRAIN | DAIRY | SUGAR
 	var/stunning = TRUE
 
 /obj/item/food/pie/cream/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
@@ -68,7 +68,7 @@
 	icon_state = "berryclafoutis"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/berryjuice = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "blackberries" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/pie/bearypie
@@ -77,7 +77,7 @@
 	icon_state = "bearypie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("pie" = 1, "meat" = 1, "salmon" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR | MEAT | FRUIT
+	foodtypes = GRAIN | SUGAR | MEAT | FRUIT
 
 /obj/item/food/pie/meatpie
 	name = "meat-pie"
@@ -85,7 +85,7 @@
 	desc = "An old barber recipe, very delicious!"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 4, /datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("pie" = 1, "meat" = 1)
-	foodtypes = LEVO | GRAIN | MEAT
+	foodtypes = GRAIN | MEAT
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/pie/tofupie
@@ -94,7 +94,7 @@
 	desc = "A delicious tofu pie."
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("pie" = 1, "tofu" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 
 /obj/item/food/pie/amanita_pie
 	name = "amanita pie"
@@ -103,7 +103,7 @@
 	bite_consumption = 4
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/toxin/amatoxin = 3, /datum/reagent/drug/mushroomhallucinogen = 1, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "mushroom" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES | TOXIC | GROSS
+	foodtypes = GRAIN | VEGETABLES | TOXIC | GROSS
 
 /obj/item/food/pie/plump_pie
 	name = "plump pie"
@@ -111,7 +111,7 @@
 	icon_state = "plump_pie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "mushroom" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 
 /obj/item/food/pie/plump_pie/Initialize(mapload)
 	var/fey = prob(10)
@@ -127,7 +127,7 @@
 	desc = "A delicious meatpie. Probably heretical."
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("pie" = 1, "meat" = 1, "acid" = 1)
-	foodtypes = LEVO | GRAIN | MEAT
+	foodtypes = GRAIN | MEAT
 
 /obj/item/food/pie/applepie
 	name = "apple pie"
@@ -135,7 +135,7 @@
 	icon_state = "applepie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("pie" = 1, "apple" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/pie/cherrypie
 	name = "cherry pie"
@@ -143,7 +143,7 @@
 	icon_state = "cherrypie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("pie" = 7, "Nicole Paige Brooks" = 2)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/pie/pumpkinpie
 	name = "pumpkin pie"
@@ -151,7 +151,7 @@
 	icon_state = "pumpkinpie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("pie" = 1, "pumpkin" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES | SUGAR
+	foodtypes = GRAIN | VEGETABLES | SUGAR
 
 /obj/item/food/pie/pumpkinpie/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/pieslice/pumpkin, 5, 20, table_required = TRUE)
@@ -162,7 +162,7 @@
 	icon_state = "pumpkinpieslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("pie" = 1, "pumpkin" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES | SUGAR
+	foodtypes = GRAIN | VEGETABLES | SUGAR
 
 /obj/item/food/pie/appletart
 	name = "golden apple streusel tart"
@@ -170,7 +170,7 @@
 	icon_state = "gappletart"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/gold = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "apple" = 1, "expensive metal" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/pie/grapetart
 	name = "grape tart"
@@ -178,7 +178,7 @@
 	icon_state = "grapetart"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "grape" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/pie/mimetart
 	name = "mime tart"
@@ -186,7 +186,7 @@
 	icon_state = "mimetart"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/nothing = 10)
 	tastes = list("nothing" = 3)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 
 /obj/item/food/pie/berrytart
 	name = "berry tart"
@@ -194,7 +194,7 @@
 	icon_state = "berrytart"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("pie" = 1, "berries" = 2)
-	foodtypes = LEVO | GRAIN | FRUIT
+	foodtypes = GRAIN | FRUIT
 
 /obj/item/food/pie/cocolavatart
 	name = "chocolate lava tart"
@@ -202,7 +202,7 @@
 	icon_state = "cocolavatart"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "dark chocolate" = 3)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 
 /obj/item/food/pie/blumpkinpie
 	name = "blumpkin pie"
@@ -210,7 +210,7 @@
 	icon_state = "blumpkinpie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 13, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("pie" = 1, "a mouthful of pool water" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 
 /obj/item/food/pie/blumpkinpie/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/pieslice/blumpkin, 5, 20, table_required = TRUE)
@@ -221,7 +221,7 @@
 	icon_state = "blumpkinpieslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("pie" = 1, "a mouthful of pool water" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 
 /obj/item/food/pie/dulcedebatata
 	name = "dulce de batata"
@@ -229,7 +229,7 @@
 	icon_state = "dulcedebatata"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 14, /datum/reagent/consumable/nutriment/vitamin = 8)
 	tastes = list("jelly" = 1, "sweet potato" = 1)
-	foodtypes = LEVO | VEGETABLES | SUGAR
+	foodtypes = VEGETABLES | SUGAR
 	venue_value = FOOD_PRICE_EXOTIC
 
 /obj/item/food/pie/dulcedebatata/MakeProcessable()
@@ -241,7 +241,7 @@
 	icon_state = "dulcedebatataslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("jelly" = 1, "sweet potato" = 1)
-	foodtypes = LEVO | VEGETABLES | SUGAR
+	foodtypes = VEGETABLES | SUGAR
 
 /obj/item/food/pie/frostypie
 	name = "frosty pie"
@@ -249,7 +249,7 @@
 	icon_state = "frostypie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 14, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("mint" = 1, "pie" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/pie/baklava
 	name = "baklava"
@@ -257,7 +257,7 @@
 	icon_state = "baklava"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("nuts" = 1, "pie" = 1)
-	foodtypes = LEVO | NUTS | SUGAR
+	foodtypes = NUTS | SUGAR
 
 /obj/item/food/pie/baklava/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/pieslice/baklava, 6, 20, table_required = TRUE)
@@ -267,7 +267,7 @@
 	desc = "A portion of a delightful healthy snack made of nut layers with thin bread"
 	icon_state = "baklavaslice"
 	tastes = list("nuts" = 1, "pie" = 1)
-	foodtypes = LEVO | NUTS | SUGAR
+	foodtypes = NUTS | SUGAR
 
 /obj/item/food/pie/frenchsilkpie
 	name = "french silk pie"
@@ -275,7 +275,7 @@
 	icon_state = "frenchsilkpie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("pie" = 1, "smooth chocolate" = 1, "whipped cream" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
+	foodtypes = GRAIN | DAIRY | SUGAR
 
 /obj/item/food/pieslice/frenchsilk
 	name = "french silk pie slice"
@@ -283,7 +283,7 @@
 	icon_state = "frenchsilkpieslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("pie" = 1, "smooth chocolate" = 1, "whipped cream" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
+	foodtypes = GRAIN | DAIRY | SUGAR
 
 /obj/item/food/pie/frenchsilkpie/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/pieslice/frenchsilk, 5, 20)

@@ -8,7 +8,7 @@
 	icon_state = "muffin"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("muffin" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR | BREAKFAST
+	foodtypes = GRAIN | SUGAR | BREAKFAST
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -17,7 +17,7 @@
 	icon_state = "berrymuffin"
 	desc = "A delicious and spongy little cake, with berries."
 	tastes = list("muffin" = 3, "berry" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR | BREAKFAST
+	foodtypes = GRAIN | FRUIT | SUGAR | BREAKFAST
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/muffin/booberry
@@ -26,14 +26,14 @@
 	alpha = 125
 	desc = "My stomach is a graveyard! No living being can quench my bloodthirst!"
 	tastes = list("muffin" = 3, "spookiness" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR | BREAKFAST
+	foodtypes = GRAIN | FRUIT | SUGAR | BREAKFAST
 
 /obj/item/food/muffin/moffin
 	name = "moffin"
 	icon_state = "moffin"
 	desc = "A delicious and spongy little cake."
 	tastes = list("muffin" = 3, "dust" = 1, "lint" = 1)
-	foodtypes = LEVO | CLOTH | GRAIN | SUGAR | BREAKFAST
+	foodtypes = CLOTH | GRAIN | SUGAR | BREAKFAST
 
 /obj/item/food/muffin/moffin/Initialize(mapload)
 	. = ..()
@@ -58,7 +58,7 @@
 	trash_type = /obj/item/trash/waffles
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("waffles" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR | BREAKFAST
+	foodtypes = GRAIN | SUGAR | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/soylentgreen
@@ -68,7 +68,7 @@
 	trash_type = /obj/item/trash/waffles
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/nutriment/protein = 4)
 	tastes = list("waffles" = 7, "people" = 1)
-	foodtypes = LEVO | GRAIN | MEAT
+	foodtypes = GRAIN | MEAT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/soylenviridians
@@ -78,7 +78,7 @@
 	trash_type = /obj/item/trash/waffles
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("waffles" = 7, "the colour green" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/rofflewaffles
@@ -89,7 +89,7 @@
 	bite_consumption = 4
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/drug/mushroomhallucinogen = 2, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("waffle" = 1, "mushrooms" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES | SUGAR | BREAKFAST
+	foodtypes = GRAIN | VEGETABLES | SUGAR | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 
 ////////////////////////////////////////////OTHER////////////////////////////////////////////
@@ -101,7 +101,7 @@
 	bite_consumption = 1
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("cookie" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -119,7 +119,7 @@
 	trash_type = /obj/item/paper
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	tastes = list("cookie" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -145,7 +145,7 @@
 	icon_state = "poppypretzel"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("pretzel" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -155,7 +155,7 @@
 	icon_state = "phelmbiscuit"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("mushroom" = 1, "biscuit" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -176,7 +176,7 @@
 	bite_consumption = 1
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("cracker" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -186,7 +186,7 @@
 	icon_state = "khachapuri"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("bread" = 1, "egg" = 1, "cheese" = 1)
-	foodtypes = LEVO | GRAIN | MEAT | DAIRY
+	foodtypes = GRAIN | MEAT | DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cookie/sugar
@@ -195,7 +195,7 @@
 	icon_state = "sugarcookie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/sugar = 6)
 	tastes = list("sweetness" = 1)
-	foodtypes = LEVO | GRAIN | JUNKFOOD | SUGAR
+	foodtypes = GRAIN | JUNKFOOD | SUGAR
 
 /obj/item/food/cookie/sugar/Initialize(mapload)
 	. = ..()
@@ -210,7 +210,7 @@
 	icon_state = "chococornet"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("biscuit" = 3, "chocolate" = 1)
-	foodtypes = LEVO | GRAIN | JUNKFOOD
+	foodtypes = GRAIN | JUNKFOOD
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cookie/oatmeal
@@ -219,7 +219,7 @@
 	icon_state = "oatmealcookie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("cookie" = 2, "oat" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 
 /obj/item/food/cookie/raisin
 	name = "raisin cookie"
@@ -227,7 +227,7 @@
 	icon_state = "raisincookie"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("cookie" = 1, "raisins" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT
+	foodtypes = GRAIN | FRUIT
 
 /obj/item/food/cherrycupcake
 	name = "cherry cupcake"
@@ -235,7 +235,7 @@
 	icon_state = "cherrycupcake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("cake" = 3, "cherry" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -252,7 +252,7 @@
 	icon_state = "honeybun"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/honey = 6)
 	tastes = list("pastry" = 1, "sweetness" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cannoli
@@ -261,7 +261,7 @@
 	icon_state = "cannoli"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("pastry" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
+	foodtypes = GRAIN | DAIRY | SUGAR
 	w_class = WEIGHT_CLASS_TINY
 	venue_value = FOOD_PRICE_CHEAP // Pastry base, 3u of sugar and a single. fucking. unit. of. milk. really?
 
@@ -273,7 +273,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	tastes = list("cream" = 2, "waffle" = 1)
 	bite_consumption = 4
-	foodtypes = LEVO | DAIRY | SUGAR
+	foodtypes = DAIRY | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	max_volume = 10 //The max volumes scales up with the number of scoops of ice cream served.
 	/// These two variables are used by the ice cream vat. Latter is the one that shows on the UI.

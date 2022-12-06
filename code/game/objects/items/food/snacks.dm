@@ -10,7 +10,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/sugar = 3)
 	junkiness = 25
 	tastes = list("candy" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -24,7 +24,7 @@
 	junkiness = 10
 	bite_consumption = 10
 	tastes = list("candy" = 5, "weight loss" = 4, "insect larva" = 1)
-	foodtypes = LEVO | JUNKFOOD | RAW | GROSS
+	foodtypes = JUNKFOOD | RAW | GROSS
 	custom_price = 80
 	w_class = WEIGHT_CLASS_TINY
 	var/revelation = FALSE
@@ -33,7 +33,7 @@
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_reagents,\
 				food_flags = food_flags,\
-				foodtypes = LEVO | foodtypes,\
+				foodtypes = foodtypes,\
 				volume = max_volume,\
 				eat_time = eat_time,\
 				tastes = tastes,\
@@ -67,7 +67,7 @@
 	junkiness = 25
 	tastes = list("dried meat" = 1)
 	w_class = WEIGHT_CLASS_SMALL
-	foodtypes = LEVO | JUNKFOOD | MEAT | SUGAR
+	foodtypes = JUNKFOOD | MEAT | SUGAR
 
 /obj/item/food/sosjerky/healthy
 	name = "homemade beef jerky"
@@ -84,7 +84,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/salt = 1)
 	junkiness = 20
 	tastes = list("salt" = 1, "crisps" = 1)
-	foodtypes = LEVO | JUNKFOOD | FRIED
+	foodtypes = JUNKFOOD | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/chips/MakeLeaveTrash()
@@ -98,7 +98,7 @@
 	trash_type = /obj/item/trash/shrimp_chips
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/cooking_oil = 3, /datum/reagent/consumable/salt = 1)
 	tastes = list("salt" = 1, "shrimp" = 1)
-	foodtypes = LEVO | JUNKFOOD | FRIED | SEAFOOD
+	foodtypes = JUNKFOOD | FRIED | SEAFOOD
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/no_raisin
@@ -109,7 +109,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/sugar = 4)
 	junkiness = 25
 	tastes = list("dried raisins" = 1)
-	foodtypes = LEVO | JUNKFOOD | FRUIT | SUGAR
+	foodtypes = JUNKFOOD | FRUIT | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	custom_price = PAYCHECK_CREW * 0.7
 	w_class = WEIGHT_CLASS_SMALL
@@ -119,7 +119,7 @@
 	desc = "Homemade raisins, the best in all of spess."
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	junkiness = 0
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/spacetwinkie
@@ -128,7 +128,7 @@
 	desc = "Guaranteed to survive longer than you will."
 	food_reagents = list(/datum/reagent/consumable/sugar = 4)
 	junkiness = 25
-	foodtypes = LEVO | JUNKFOOD | GRAIN | SUGAR
+	foodtypes = JUNKFOOD | GRAIN | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	custom_price = PAYCHECK_LOWER
 	w_class = WEIGHT_CLASS_SMALL
@@ -140,7 +140,7 @@
 	desc = "The leftover from a smoked-out candy cigarette. Can be eaten!"
 	food_reagents = list(/datum/reagent/consumable/sugar = 4, /datum/reagent/ash = 3)
 	junkiness = 10 //powergame trash food by buying candy cigs in bulk and eating them when they extinguish
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -156,7 +156,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/sugar = 3)
 	junkiness = 25
 	tastes = list("cheese" = 5, "crisps" = 2)
-	foodtypes = LEVO | JUNKFOOD | DAIRY | SUGAR
+	foodtypes = JUNKFOOD | DAIRY | SUGAR
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/syndicake
@@ -166,7 +166,7 @@
 	trash_type = /obj/item/trash/syndi_cakes
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/doctor_delight = 5)
 	tastes = list("sweetness" = 3, "cake" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | VEGETABLES
+	foodtypes = GRAIN | FRUIT | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/energybar
@@ -176,7 +176,7 @@
 	trash_type = /obj/item/trash/energybar
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/liquidelectricity/enriched = 3)
 	tastes = list("pure electricity" = 3, "fitness" = 2)
-	foodtypes = LEVO | TOXIC
+	foodtypes = TOXIC
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -187,7 +187,7 @@
 	trash_type = /obj/item/trash/peanuts
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("peanuts" = 4, "anger" = 1)
-	foodtypes = LEVO | JUNKFOOD | NUTS
+	foodtypes = JUNKFOOD | NUTS
 	custom_price = PAYCHECK_CREW * 0.8 //nuts are expensive in real life, and this is the best food in the vendor.
 	junkiness = 10 //less junky than other options, since peanuts are a decently healthy snack option
 	w_class = WEIGHT_CLASS_SMALL
@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	food_reagents = list(/datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/coco = 1)
 	tastes = list("chocolate candy" = 3)
 	junkiness = 25
-	foodtypes = LEVO | JUNKFOOD
+	foodtypes = JUNKFOOD
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cnds/suicide_act(mob/user)
@@ -281,7 +281,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	desc = "Eine köstliche Begleitung zu Ihrem Lieblingsbier."
 	food_reagents = list(/datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/coco = 1)
 	tastes = list("chocolate candy" = 2, "pretzel" = 1)
-	foodtypes = LEVO | JUNKFOOD | GRAIN
+	foodtypes = JUNKFOOD | GRAIN
 
 /obj/item/food/cnds/peanut_butter
 	name = "peanut butter C&Ds"
@@ -320,7 +320,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	trash_type = /obj/item/trash/pistachios
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 1) //a healthy but expensive snack
 	tastes = list("pistachios" = 4, "subtle sweetness" = 1)
-	foodtypes = LEVO | JUNKFOOD | NUTS
+	foodtypes = JUNKFOOD | NUTS
 	custom_price = PAYCHECK_CREW//pistachios are even more expensive.
 	junkiness = 10 //on par with peanuts
 	w_class = WEIGHT_CLASS_SMALL
@@ -333,7 +333,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	trash_type = /obj/item/trash/semki
 	food_reagents = list(/datum/reagent/consumable/cornoil  = 1, /datum/reagent/consumable/salt = 6) //1 cornoil is equal to 1.33 nutriment
 	tastes = list("sunflowers" = 5)
-	foodtypes = LEVO | JUNKFOOD | NUTS
+	foodtypes = JUNKFOOD | NUTS
 	custom_price = PAYCHECK_LOWER * 0.4 //sunflowers are cheap in real life.
 	bite_consumption = 1
 	junkiness = 25
@@ -345,7 +345,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	icon_state = "sunseeds"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/iron = 2)
 	junkiness = 5 //Homemade or not, sunflower seets are always kinda junky
-	foodtypes = LEVO | JUNKFOOD | NUTS
+	foodtypes = JUNKFOOD | NUTS
 	trash_type = /obj/item/trash/semki/healthy
 
 /obj/item/food/cornchips
@@ -358,7 +358,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	junkiness = 20
 	custom_price = PAYCHECK_LOWER * 0.8  //we are filled to the brim with flavor
 	tastes = list("fried corn" = 1)
-	foodtypes = LEVO | JUNKFOOD | FRIED
+	foodtypes = JUNKFOOD | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cornchips/MakeLeaveTrash()
@@ -386,7 +386,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	icon_state = "boritosred"
 	trash_type = /obj/item/trash/boritos/red
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/cooking_oil = 2, /datum/reagent/consumable/salt = 3, /datum/reagent/consumable/astrotame = 1, /datum/reagent/consumable/cornmeal = 1)
-	tastes = list("fried corn" = 1, "nacho cheese" = 3)
+	tastes = list("fried corn" = 1, "nacho cheese" = 3) 
 
 /obj/item/food/cornchips/purple
 	name = "\improper Spicy Sweet Chili Boritos corn chips"

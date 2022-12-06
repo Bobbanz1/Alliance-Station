@@ -10,7 +10,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 6,  /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("fish" = 4, "batter" = 1, "hot peppers" = 1)
-	foodtypes = LEVO | SEAFOOD | FRIED
+	foodtypes = SEAFOOD | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 
 
@@ -21,7 +21,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
 	bite_consumption = 6
 	tastes = list("fish" = 1)
-	foodtypes = LEVO | SEAFOOD
+	foodtypes = SEAFOOD
 	eatverbs = list("bite", "chew", "gnaw", "swallow", "chomp")
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -78,7 +78,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	bite_consumption = 1
 	tastes = list("fish" = 1, "breadcrumbs" = 1)
-	foodtypes = LEVO | SEAFOOD | FRIED
+	foodtypes = SEAFOOD | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_EXOTIC
 
@@ -88,7 +88,7 @@
 	icon_state = "fishandchips"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("fish" = 1, "chips" = 1)
-	foodtypes = LEVO | SEAFOOD | VEGETABLES | FRIED
+	foodtypes = SEAFOOD | VEGETABLES | FRIED
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/fishfry
@@ -97,7 +97,7 @@
 	icon_state = "fishfry"
 	food_reagents = list (/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("fish" = 1, "pan seared vegtables" = 1)
-	foodtypes = LEVO | SEAFOOD | VEGETABLES | FRIED
+	foodtypes = SEAFOOD | VEGETABLES | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/fishtaco
@@ -106,7 +106,7 @@
 	icon_state = "fishtaco"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("taco" = 4, "fish" = 2, "cheese" = 2, "cabbage" = 1)
-	foodtypes = LEVO | SEAFOOD | DAIRY | GRAIN | VEGETABLES
+	foodtypes = SEAFOOD | DAIRY | GRAIN | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/vegetariansushiroll
@@ -115,7 +115,7 @@
 	icon_state = "vegetariansushiroll"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("boiled rice" = 4, "carrots" = 2, "potato" = 2)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/vegetariansushiroll/MakeProcessable()
@@ -127,7 +127,7 @@
 	icon_state = "vegetariansushislice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("boiled rice" = 4, "carrots" = 2, "potato" = 2)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/spicyfiletsushiroll
@@ -136,7 +136,7 @@
 	icon_state = "spicyfiletroll"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/capsaicin = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("boiled rice" = 4, "fish" = 2, "spicyness" = 2)
-	foodtypes = LEVO | VEGETABLES | SEAFOOD
+	foodtypes = VEGETABLES | SEAFOOD
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/spicyfiletsushiroll/MakeProcessable()
@@ -148,7 +148,7 @@
 	icon_state = "spicyfiletslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("boiled rice" = 4, "fish" = 2, "spicyness" = 2)
-	foodtypes = LEVO | VEGETABLES | SEAFOOD
+	foodtypes = VEGETABLES | SEAFOOD
 	w_class = WEIGHT_CLASS_SMALL
 
 ////////////////////////////////////////////MEATS AND ALIKE////////////////////////////////////////////
@@ -159,7 +159,7 @@
 	icon_state = "tofu"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("tofu" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -167,7 +167,7 @@
 	name = "soggy tofu"
 	desc = "You refuse to eat this strange bean curd."
 	tastes = list("sour, rotten water" = 1)
-	foodtypes = LEVO | GROSS
+	foodtypes = GROSS
 
 /obj/item/food/spiderleg
 	name = "spider leg"
@@ -175,7 +175,7 @@
 	icon_state = "spiderleg"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/toxin = 2)
 	tastes = list("cobwebs" = 1)
-	foodtypes = LEVO | MEAT | TOXIC
+	foodtypes = MEAT | TOXIC
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/spiderleg/MakeGrillable()
@@ -187,7 +187,7 @@
 	icon_state = "cornedbeef"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("meat" = 1, "cabbage" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES
+	foodtypes = MEAT | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/bearsteak
@@ -196,7 +196,7 @@
 	icon_state = "bearsteak"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 9, /datum/reagent/consumable/ethanol/manly_dorf = 5)
 	tastes = list("meat" = 1, "salmon" = 1)
-	foodtypes = LEVO | MEAT | ALCOHOL
+	foodtypes = MEAT | ALCOHOL
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_EXOTIC
 
@@ -206,7 +206,7 @@
 	icon_state = "raw_meatball"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	w_class = WEIGHT_CLASS_SMALL
 	var/meatball_type = /obj/item/food/meatball
 	var/patty_type = /obj/item/food/raw_patty
@@ -248,7 +248,7 @@
 	icon_state = "meatball"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
@@ -279,7 +279,7 @@
 	icon_state = "raw_patty"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	w_class = WEIGHT_CLASS_SMALL
 	var/patty_type = /obj/item/food/patty/plain
 
@@ -315,7 +315,7 @@
 	icon_state = "patty"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -347,7 +347,7 @@
 	icon_state = "raw_sausage"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	eatverbs = list("bite", "chew", "nibble", "deep throat", "gobble", "chomp")
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -360,7 +360,7 @@
 	icon_state = "sausage"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | BREAKFAST
+	foodtypes = MEAT | BREAKFAST
 	food_flags = FOOD_FINGER_FOOD
 	eatverbs = list("bite", "chew", "nibble", "deep throat", "gobble", "chomp")
 	w_class = WEIGHT_CLASS_SMALL
@@ -385,7 +385,7 @@
 	icon_state = "salami"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 1)
 	tastes = list("meat" = 1, "smoke" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -395,7 +395,7 @@
 	icon_state = "khinkali"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/garlic = 1)
 	tastes = list("meat" = 1, "onions" = 1, "garlic" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/rawkhinkali/MakeGrillable()
@@ -408,7 +408,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/garlic = 1)
 	bite_consumption = 3
 	tastes = list("meat" = 1, "onions" = 1, "garlic" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -418,7 +418,7 @@
 	icon_state = "meatbun"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("bun" = 3, "meat" = 2)
-	foodtypes = LEVO | GRAIN | MEAT | VEGETABLES
+	foodtypes = GRAIN | MEAT | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -429,7 +429,7 @@
 	bite_consumption = 12
 	food_reagents = list(/datum/reagent/monkey_powder = 30)
 	tastes = list("the jungle" = 1, "bananas" = 1)
-	foodtypes = LEVO | MEAT | SUGAR
+	foodtypes = MEAT | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 	var/faction
@@ -508,7 +508,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("soy" = 1, "vegetables" = 1)
 	eatverbs = list("slurp", "sip", "inhale", "drink")
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/boiledspiderleg
@@ -517,7 +517,7 @@
 	icon_state = "spiderlegcooked"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/capsaicin = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("hot peppers" = 1, "cobwebs" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -528,7 +528,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/nutriment/vitamin = 3)
 	bite_consumption = 4
 	tastes = list("meat" = 1, "the colour green" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/sashimi
@@ -537,7 +537,7 @@
 	icon_state = "sashimi"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/capsaicin = 9, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("fish" = 1, "hot peppers" = 1)
-	foodtypes = LEVO | SEAFOOD
+	foodtypes = SEAFOOD
 	w_class = WEIGHT_CLASS_TINY
 	//total price of this dish is 20 and a small amount more for soy sauce, all of which are available at the orders console
 	venue_value = FOOD_PRICE_CHEAP
@@ -550,7 +550,7 @@
 	name = "chicken nugget"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("\"chicken\"" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 	venue_value = FOOD_PRICE_CHEAP
@@ -567,7 +567,7 @@
 	icon_state = "pigblanket"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("meat" = 1, "butter" = 1)
-	foodtypes = LEVO | MEAT | DAIRY | GRAIN
+	foodtypes = MEAT | DAIRY | GRAIN
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/bbqribs
@@ -577,7 +577,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/bbqsauce = 10)
 	tastes = list("meat" = 3, "smokey sauce" = 1)
-	foodtypes = LEVO | MEAT | SUGAR
+	foodtypes = MEAT | SUGAR
 
 /obj/item/food/meatclown
 	name = "meat clown"
@@ -597,7 +597,7 @@
 	icon_state = "lasagna"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/tomatojuice = 10)
 	tastes = list("meat" = 3, "pasta" = 3, "tomato" = 2, "cheese" = 2)
-	foodtypes = LEVO | MEAT | DAIRY | GRAIN
+	foodtypes = MEAT | DAIRY | GRAIN
 	venue_value = FOOD_PRICE_NORMAL
 
 //////////////////////////////////////////// KEBABS AND OTHER SKEWERS ////////////////////////////////////////////
@@ -615,7 +615,7 @@
 	desc = "A human meat, on a stick."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 16, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("tender meat" = 3, "metal" = 1)
-	foodtypes = LEVO | MEAT | GROSS
+	foodtypes = MEAT | GROSS
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/kebab/monkey
@@ -623,7 +623,7 @@
 	desc = "Delicious meat, on a stick."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 16, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("meat" = 3, "metal" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/kebab/tofu
@@ -631,7 +631,7 @@
 	desc = "Vegan meat, on a stick."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 15)
 	tastes = list("tofu" = 3, "metal" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/kebab/tail
@@ -639,7 +639,7 @@
 	desc = "Severed lizard tail on a stick."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 30, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("meat" = 8, "metal" = 4, "scales" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 
 /obj/item/food/kebab/rat
 	name = "rat-kebab"
@@ -649,7 +649,7 @@
 	trash_type = null
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("rat meat" = 1, "metal" = 1)
-	foodtypes = LEVO | MEAT | GROSS
+	foodtypes = MEAT | GROSS
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/kebab/rat/double
@@ -677,7 +677,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/cooking_oil = 2) //Meat has fats that a food processor can process into cooking oil
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	///Legacy code, handles the coloring of the overlay of the cutlets made from this.
 	var/slab_color = "#FF0000"
 
@@ -696,7 +696,7 @@
 /obj/item/food/meat/slab/human
 	name = "meat"
 	tastes = list("tender meat" = 1)
-	foodtypes = LEVO | MEAT | RAW | GROSS
+	foodtypes = MEAT | RAW | GROSS
 	venue_value = FOOD_MEAT_HUMAN
 
 /obj/item/food/meat/slab/human/MakeGrillable()
@@ -710,7 +710,7 @@
 	desc = "Because jello wasn't offensive enough to vegans."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/toxin/slimejelly = 3)
 	tastes = list("slime" = 1, "jelly" = 1)
-	foodtypes = LEVO | MEAT | RAW | TOXIC
+	foodtypes = MEAT | RAW | TOXIC
 	venue_value = FOOD_MEAT_MUTANT_RARE
 
 /obj/item/food/meat/slab/human/mutant/golem
@@ -718,19 +718,19 @@
 	desc = "Edible rocks, welcome to the future."
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/iron = 3)
 	tastes = list("rock" = 1)
-	foodtypes = LEVO | MEAT | RAW | GROSS
+	foodtypes = MEAT | RAW | GROSS
 	venue_value = FOOD_MEAT_MUTANT_RARE
 
 /obj/item/food/meat/slab/human/mutant/golem/adamantine
 	icon_state = "agolemmeat"
 	desc = "From the slime pen to the rune to the kitchen, science."
-	foodtypes = LEVO | MEAT | RAW | GROSS
+	foodtypes = MEAT | RAW | GROSS
 
 /obj/item/food/meat/slab/human/mutant/lizard
 	icon_state = "lizardmeat"
 	desc = "Delicious dino damage."
 	tastes = list("meat" = 4, "scales" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	venue_value = FOOD_MEAT_MUTANT
 
 /obj/item/food/meat/slab/human/mutant/lizard/MakeGrillable()
@@ -740,14 +740,14 @@
 	icon_state = "plantmeat"
 	desc = "All the joys of healthy eating with all the fun of cannibalism."
 	tastes = list("salad" = 1, "wood" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	venue_value = FOOD_MEAT_MUTANT_RARE
 
 /obj/item/food/meat/slab/human/mutant/shadow
 	icon_state = "shadowmeat"
 	desc = "Ow, the edge."
 	tastes = list("darkness" = 1, "meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	venue_value = FOOD_MEAT_MUTANT_RARE
 
 /obj/item/food/meat/slab/human/mutant/fly
@@ -755,14 +755,14 @@
 	desc = "Nothing says tasty like maggot filled radioactive mutant flesh."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/uranium = 3)
 	tastes = list("maggots" = 1, "the inside of a reactor" = 1)
-	foodtypes = LEVO | MEAT | RAW | GROSS | BUGS
+	foodtypes = MEAT | RAW | GROSS | BUGS
 	venue_value = FOOD_MEAT_MUTANT
 
 /obj/item/food/meat/slab/human/mutant/moth
 	icon_state = "mothmeat"
 	desc = "Unpleasantly powdery and dry. Kind of pretty, though."
 	tastes = list("dust" = 1, "powder" = 1, "meat" = 2)
-	foodtypes = LEVO | MEAT | RAW | BUGS
+	foodtypes = MEAT | RAW | BUGS
 	venue_value = FOOD_MEAT_MUTANT
 
 /obj/item/food/meat/slab/human/mutant/skeleton
@@ -770,7 +770,7 @@
 	icon_state = "skeletonmeat"
 	desc = "There's a point where this needs to stop, and clearly we have passed it."
 	tastes = list("bone" = 1)
-	foodtypes = LEVO | GROSS
+	foodtypes = GROSS
 	venue_value = FOOD_MEAT_MUTANT_RARE
 
 /obj/item/food/meat/slab/human/mutant/skeleton/MakeProcessable()
@@ -781,14 +781,14 @@
 	icon_state = "rottenmeat"
 	desc = "Halfway to becoming fertilizer for your garden."
 	tastes = list("brains" = 1, "meat" = 1)
-	foodtypes = LEVO | RAW | MEAT | TOXIC
+	foodtypes = RAW | MEAT | TOXIC
 
 /obj/item/food/meat/slab/human/mutant/ethereal
 	icon_state = "etherealmeat"
 	desc = "So shiny you feel like ingesting it might make you shine too"
 	food_reagents = list(/datum/reagent/consumable/liquidelectricity/enriched = 10)
 	tastes = list("pure electricity" = 2, "meat" = 1)
-	foodtypes = LEVO | RAW | MEAT | TOXIC
+	foodtypes = RAW | MEAT | TOXIC
 	venue_value = FOOD_MEAT_MUTANT
 
 ////////////////////////////////////// OTHER MEATS ////////////////////////////////////////////////////////
@@ -798,7 +798,7 @@
 	name = "synthmeat"
 	icon_state = "meat_old"
 	desc = "A synthetic slab of meat."
-	foodtypes = LEVO | RAW | MEAT //hurr durr chemicals we're harmed in the production of this meat thus its non-vegan.
+	foodtypes = RAW | MEAT //hurr durr chemicals we're harmed in the production of this meat thus its non-vegan.
 	venue_value = FOOD_PRICE_WORTHLESS
 
 /obj/item/food/meat/slab/synthmeat/MakeGrillable()
@@ -809,19 +809,19 @@
 	icon_state = "meatproduct"
 	desc = "A slab of station reclaimed and chemically processed meat product."
 	tastes = list("meat flavoring" = 2, "modified starches" = 2, "natural & artificial dyes" = 1, "butyric acid" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/meatproduct/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/steak/meatproduct, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 /obj/item/food/meat/slab/monkey
 	name = "monkey meat"
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/mouse
 	name = "mouse meat"
 	desc = "A slab of mouse meat. Best not eat it raw."
-	foodtypes = LEVO | RAW | MEAT | GROSS
+	foodtypes = RAW | MEAT | GROSS
 
 /obj/item/food/meat/slab/mouse/Initialize(mapload)
 	. = ..()
@@ -831,7 +831,7 @@
 	name = "corgi meat"
 	desc = "Tastes like... well you know..."
 	tastes = list("meat" = 4, "a fondness for wearing hats" = 1)
-	foodtypes = LEVO | RAW | MEAT | GROSS
+	foodtypes = RAW | MEAT | GROSS
 
 /obj/item/food/meat/slab/corgi/Initialize(mapload)
 	. = ..()
@@ -840,7 +840,7 @@
 /obj/item/food/meat/slab/pug
 	name = "pug meat"
 	desc = "Tastes like... well you know..."
-	foodtypes = LEVO | RAW | MEAT | GROSS
+	foodtypes = RAW | MEAT | GROSS
 
 /obj/item/food/meat/slab/pug/Initialize(mapload)
 	. = ..()
@@ -852,7 +852,7 @@
 	icon_state = "tomatomeat"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("tomato" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 
 /obj/item/food/meat/slab/killertomato/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/steak/killertomato, rand(70 SECONDS, 85 SECONDS), TRUE, TRUE)
@@ -866,7 +866,7 @@
 	icon_state = "bearmeat"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 16, /datum/reagent/medicine/morphine = 5, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cooking_oil = 6)
 	tastes = list("meat" = 1, "salmon" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/bear/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/meat/rawcutlet/bear, 3, 30, table_required = TRUE)
@@ -885,7 +885,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/nutriment/vitamin = 3)
 	bite_consumption = 4
 	tastes = list("meat" = 1, "acid" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/xeno/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/meat/rawcutlet/xeno, 3, 30, table_required = TRUE)
@@ -899,7 +899,7 @@
 	icon_state = "spidermeat"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/toxin = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cobwebs" = 1)
-	foodtypes = LEVO | RAW | MEAT | TOXIC
+	foodtypes = RAW | MEAT | TOXIC
 
 /obj/item/food/meat/slab/spider/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/meat/rawcutlet/spider, 3, 30, table_required = TRUE)
@@ -913,7 +913,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/toxin = 5, /datum/reagent/consumable/cooking_oil = 3)
 	icon_state = "goliathmeat"
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | RAW | MEAT | TOXIC
+	foodtypes = RAW | MEAT | TOXIC
 
 /obj/item/food/meat/slab/goliath/burn()
 	visible_message(span_notice("[src] finishes cooking!"))
@@ -927,7 +927,7 @@
 	icon_state = "meatwheat_clump"
 	bite_consumption = 4
 	tastes = list("meat" = 1, "wheat" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 
 /obj/item/food/meat/slab/gorilla
 	name = "gorilla meat"
@@ -941,7 +941,7 @@
 	bite_consumption = 2
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/cooking_oil = 3)
 	tastes = list("bacon" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/rawbacon/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/bacon, rand(25 SECONDS, 45 SECONDS), TRUE, TRUE)
@@ -952,7 +952,7 @@
 	icon_state = "baconcooked"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/cooking_oil = 2)
 	tastes = list("bacon" = 1)
-	foodtypes = LEVO | MEAT | BREAKFAST
+	foodtypes = MEAT | BREAKFAST
 	burns_on_grill = TRUE
 
 /obj/item/food/meat/slab/gondola
@@ -960,7 +960,7 @@
 	desc = "According to legends of old, consuming raw gondola flesh grants one inner peace."
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/gondola_mutation_toxin = 5, /datum/reagent/consumable/cooking_oil = 3)
 	tastes = list("meat" = 4, "tranquility" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/gondola/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/meat/rawcutlet/gondola, 3, 30, table_required = TRUE)
@@ -990,7 +990,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/cooking_oil = 3)
 	tastes = list("raw crab" = 1)
-	foodtypes = LEVO | RAW | MEAT
+	foodtypes = RAW | MEAT
 
 /obj/item/food/meat/slab/rawcrab/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/crab, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE) //Add medium rare later maybe?
@@ -1001,7 +1001,7 @@
 	icon_state = "crabmeat"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cooking_oil = 2)
 	tastes = list("crab" = 1)
-	foodtypes = LEVO | SEAFOOD
+	foodtypes = SEAFOOD
 	burns_on_grill = TRUE
 
 /obj/item/food/meat/slab/chicken
@@ -1027,7 +1027,7 @@
 	desc = "A piece of hot spicy meat."
 	icon_state = "meatsteak"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/nutriment/vitamin = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	tastes = list("meat" = 1)
 	burns_on_grill = TRUE
 
@@ -1041,11 +1041,11 @@
 	name = "[source_item.name] steak"
 
 /obj/item/food/meat/steak/plain
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 
 /obj/item/food/meat/steak/plain/human
 	tastes = list("tender meat" = 1)
-	foodtypes = LEVO | MEAT | GROSS
+	foodtypes = MEAT | GROSS
 
 ///Make sure the steak has the correct name
 /obj/item/food/meat/steak/plain/human/OnMicrowaveCooked(datum/source, obj/item/source_item, cooking_efficiency = 1)
@@ -1063,7 +1063,7 @@
 /obj/item/food/meat/steak/killertomato
 	name = "killer tomato steak"
 	tastes = list("tomato" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 
 /obj/item/food/meat/steak/bear
 	name = "bear steak"
@@ -1084,7 +1084,7 @@
 	icon_state = "goliathsteak"
 	trash_type = null
 	tastes = list("meat" = 1, "rock" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 
 /obj/item/food/meat/steak/gondola
 	name = "gondola steak"
@@ -1104,7 +1104,7 @@
 	name = "lizard steak"
 	icon_state = "birdsteak"
 	tastes = list("juicy chicken" = 3, "scales" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 
 /obj/item/food/meat/steak/meatproduct
 	name = "thermally processed meat product"
@@ -1128,7 +1128,7 @@
 	bite_consumption = 2
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT | RAW
+	foodtypes = MEAT | RAW
 	var/meat_type = "meat"
 
 /obj/item/food/meat/rawcutlet/MakeGrillable()
@@ -1146,13 +1146,13 @@
 	meat_type = original_atom.name
 
 /obj/item/food/meat/rawcutlet/plain
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 
 /obj/item/food/meat/rawcutlet/plain
 
 /obj/item/food/meat/rawcutlet/plain/human
 	tastes = list("tender meat" = 1)
-	foodtypes = LEVO | MEAT | RAW | GROSS
+	foodtypes = MEAT | RAW | GROSS
 
 /obj/item/food/meat/rawcutlet/plain/human/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/cutlet/plain/human, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
@@ -1172,7 +1172,7 @@
 /obj/item/food/meat/rawcutlet/killertomato
 	name = "raw killer tomato cutlet"
 	tastes = list("tomato" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 
 /obj/item/food/meat/rawcutlet/killertomato/MakeGrillable()
 	AddComponent(/datum/component/grillable, /obj/item/food/meat/cutlet/killertomato, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
@@ -1233,7 +1233,7 @@
 	bite_consumption = 2
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | MEAT
+	foodtypes = MEAT
 	burns_on_grill = TRUE
 
 /obj/item/food/meat/cutlet/Initialize(mapload)
@@ -1251,7 +1251,7 @@
 
 /obj/item/food/meat/cutlet/plain/human
 	tastes = list("tender meat" = 1)
-	foodtypes = LEVO | MEAT | GROSS
+	foodtypes = MEAT | GROSS
 
 /obj/item/food/meat/cutlet/plain/human/OnMicrowaveCooked(datum/source, atom/source_item, cooking_efficiency)
 	. = ..()
@@ -1265,7 +1265,7 @@
 /obj/item/food/meat/cutlet/killertomato
 	name = "killer tomato cutlet"
 	tastes = list("tomato" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 
 /obj/item/food/meat/cutlet/bear
 	name = "bear cutlet"
@@ -1297,7 +1297,7 @@
 	icon_state = "fried_chicken1"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("chicken" = 3, "fried batter" = 1)
-	foodtypes = LEVO | MEAT | FRIED
+	foodtypes = MEAT | FRIED
 	junkiness = 25
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -1312,7 +1312,7 @@
 	icon_state = "beefstroganoff"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 16, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("beef" = 3, "sour cream" = 1, "salt" = 1, "pepper" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES | DAIRY
+	foodtypes = MEAT | VEGETABLES | DAIRY
 
 	w_class = WEIGHT_CLASS_SMALL
 	//basic ingredients, but a lot of them. just covering costs here
@@ -1324,7 +1324,7 @@
 	icon_state = "beef_wellington"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 21, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("beef" = 3, "mushrooms" = 1, "pancetta" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES | GRAIN
+	foodtypes = MEAT | VEGETABLES | GRAIN
 	w_class = WEIGHT_CLASS_NORMAL
 	venue_value = FOOD_PRICE_EXOTIC
 
@@ -1337,7 +1337,7 @@
 	icon_state = "beef_wellington_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 7, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("beef" = 3, "mushrooms" = 1, "pancetta" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES | GRAIN
+	foodtypes = MEAT | VEGETABLES | GRAIN
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_NORMAL
 
@@ -1347,6 +1347,6 @@
 	icon_state = "full_english"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("sausage" = 1, "bacon" = 1, "egg" = 1, "tomato" = 1, "mushrooms" = 1, "bread" = 1, "beans" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES | GRAIN | BREAKFAST
+	foodtypes = MEAT | VEGETABLES | GRAIN | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_EXOTIC

@@ -8,7 +8,7 @@
 	bite_consumption = 5
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/sugar = 3)
 	tastes = list("donut" = 1)
-	foodtypes = LEVO | JUNKFOOD | GRAIN | FRIED | SUGAR | BREAKFAST
+	foodtypes = JUNKFOOD | GRAIN | FRIED | SUGAR | BREAKFAST
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 	var/decorated_icon = "donut_homer"
@@ -27,7 +27,7 @@
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_reagents,\
 				food_flags = food_flags,\
-				foodtypes = LEVO | foodtypes,\
+				foodtypes = foodtypes,\
 				volume = max_volume,\
 				eat_time = eat_time,\
 				tastes = tastes,\
@@ -78,7 +78,7 @@
 	icon_state = "donut_meat"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/ketchup = 3)
 	tastes = list("meat" = 1)
-	foodtypes = LEVO | JUNKFOOD | MEAT | GROSS | FRIED | BREAKFAST
+	foodtypes = JUNKFOOD | MEAT | GROSS | FRIED | BREAKFAST
 	is_decorated = TRUE
 
 /obj/item/food/donut/berry
@@ -161,7 +161,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/sugar = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	extra_reagent = /datum/reagent/consumable/berryjuice
 	tastes = list("jelly" = 1, "donut" = 3)
-	foodtypes = LEVO | JUNKFOOD | GRAIN | FRIED | FRUIT | SUGAR | BREAKFAST
+	foodtypes = JUNKFOOD | GRAIN | FRIED | FRUIT | SUGAR | BREAKFAST
 
 // Jelly donuts don't have holes, but look the same on the outside
 /obj/item/food/donut/jelly/in_box_sprite()
@@ -252,7 +252,7 @@
 	name = "jelly donut"
 	desc = "You jelly?"
 	extra_reagent = /datum/reagent/toxin/slimejelly
-	foodtypes = LEVO | JUNKFOOD | GRAIN | FRIED | TOXIC | SUGAR | BREAKFAST
+	foodtypes = JUNKFOOD | GRAIN | FRIED | TOXIC | SUGAR | BREAKFAST
 
 /obj/item/food/donut/jelly/slimejelly/plain
 	icon_state = "jelly"

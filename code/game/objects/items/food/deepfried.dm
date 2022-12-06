@@ -9,7 +9,7 @@
 	AddComponent(/datum/component/edible,\
 			initial_reagents = food_reagents,\
 			food_flags = food_flags,\
-			foodtypes = LEVO | foodtypes,\
+			foodtypes = foodtypes,\
 			volume = max_volume,\
 			eat_time = eat_time,\
 			tastes = tastes,\

@@ -10,7 +10,7 @@
 	name = "the concept of cheese"
 	desc = "This probably shouldn't exist."
 	tastes = list("cheese" = 1)
-	foodtypes = LEVO | DAIRY
+	foodtypes = DAIRY
 	/// used to determine how much health rats/regal rats recover when they eat it.
 	var/rat_heal = 0
 
@@ -64,7 +64,7 @@
 	icon_state = "watermelonslice"
 	food_reagents = list(/datum/reagent/water = 1, /datum/reagent/consumable/nutriment/vitamin = 0.2, /datum/reagent/consumable/nutriment = 1)
 	tastes = list("watermelon" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 	food_flags = FOOD_FINGER_FOOD
 	juice_results = list(/datum/reagent/consumable/watermelonjuice = 5)
 	w_class = WEIGHT_CLASS_SMALL
@@ -75,7 +75,7 @@
 	icon_state = "candy_corn"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/sugar = 2)
 	tastes = list("candy corn" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -85,7 +85,7 @@
 	force = 1 // the description isn't lying
 	throwforce = 1 // if someone manages to bust out of jail with candy corn god bless them
 	tastes = list("bitter wax" = 1)
-	foodtypes = LEVO | GROSS
+	foodtypes = GROSS
 
 /obj/item/food/chocolatebar
 	name = "chocolate bar"
@@ -93,7 +93,7 @@
 	icon_state = "chocolatebar"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/coco = 2)
 	tastes = list("chocolate" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -103,7 +103,7 @@
 	icon_state = "hugemushroomslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("mushroom" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/hugemushroomslice/Initialize(mapload)
@@ -118,7 +118,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	bite_consumption = 0.1 //this snack is supposed to be eating during looooong time. And this it not dinner food! --rastaf0
 	tastes = list("popcorn" = 3, "butter" = 1)
-	foodtypes = LEVO | JUNKFOOD
+	foodtypes = JUNKFOOD
 	eatverbs = list("bite", "nibble", "gnaw", "gobble", "chomp")
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -128,7 +128,7 @@
 	icon_state = "loadedbakedpotato"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("potato" = 1)
-	foodtypes = LEVO | VEGETABLES | DAIRY
+	foodtypes = VEGETABLES | DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/fries
@@ -138,7 +138,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	tastes = list("fries" = 3, "salt" = 1)
-	foodtypes = LEVO | VEGETABLES | FRIED
+	foodtypes = VEGETABLES | FRIED
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -152,7 +152,7 @@
 	icon_state = "tatortot"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	tastes = list("potato" = 3, "valids" = 1)
-	foodtypes = LEVO | FRIED | VEGETABLES
+	foodtypes = FRIED | VEGETABLES
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -167,7 +167,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/protein = 1)
 	tastes = list("soy" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cheesyfries
@@ -177,7 +177,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("fries" = 3, "cheese" = 1)
-	foodtypes = LEVO | VEGETABLES | DAIRY
+	foodtypes = VEGETABLES | DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -191,7 +191,7 @@
 	icon_state = "poutine"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7)
 	tastes = list("potato" = 3, "gravy" = 1, "squeaky cheese" = 1)
-	foodtypes = LEVO | VEGETABLES | FRIED | MEAT
+	foodtypes = VEGETABLES | FRIED | MEAT
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -204,7 +204,7 @@
 	desc = "Someone should be demoted from cook for this."
 	icon_state = "badrecipe"
 	food_reagents = list(/datum/reagent/toxin/bad_food = 30)
-	foodtypes = LEVO | GROSS
+	foodtypes = GROSS
 	w_class = WEIGHT_CLASS_SMALL
 	preserved_food = TRUE //Can't decompose any more than this
 
@@ -241,7 +241,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("carrots" = 3, "salt" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/carrotfries/Initialize(mapload)
@@ -255,7 +255,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/caramel = 5)
 	tastes = list("apple" = 2, "caramel" = 3)
-	foodtypes = LEVO | JUNKFOOD | FRUIT | SUGAR
+	foodtypes = JUNKFOOD | FRUIT | SUGAR
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/mint
@@ -264,7 +264,7 @@
 	icon_state = "mint"
 	bite_consumption = 1
 	food_reagents = list(/datum/reagent/toxin/minttoxin = 2)
-	foodtypes = LEVO | TOXIC | SUGAR
+	foodtypes = TOXIC | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -274,7 +274,7 @@
 	icon_state = "spidereggs"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/toxin = 2)
 	tastes = list("cobwebs" = 1)
-	foodtypes = LEVO | MEAT | TOXIC | BUGS
+	foodtypes = MEAT | TOXIC | BUGS
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/spidereggs/processed
@@ -283,7 +283,7 @@
 	icon_state = "spidereggs"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4)
 	tastes = list("cobwebs" = 1)
-	foodtypes = LEVO | MEAT | BUGS
+	foodtypes = MEAT | BUGS
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/spiderling
@@ -292,7 +292,7 @@
 	icon_state = "spiderling"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/toxin = 4)
 	tastes = list("cobwebs" = 1, "guts" = 2)
-	foodtypes = LEVO | MEAT | TOXIC | BUGS
+	foodtypes = MEAT | TOXIC | BUGS
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/spiderlollipop
@@ -302,7 +302,7 @@
 	worn_icon_state = "lollipop_stick"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/toxin = 1, /datum/reagent/iron = 10, /datum/reagent/consumable/sugar = 5, /datum/reagent/medicine/omnizine = 2) //lollipop, but vitamins = toxins
 	tastes = list("cobwebs" = 1, "sugar" = 2)
-	foodtypes = LEVO | JUNKFOOD | SUGAR | BUGS
+	foodtypes = JUNKFOOD | SUGAR | BUGS
 	food_flags = FOOD_FINGER_FOOD
 	slot_flags = ITEM_SLOT_MASK
 
@@ -316,7 +316,7 @@
 	icon_state = "chococoin"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/coco = 1, /datum/reagent/consumable/sugar = 1)
 	tastes = list("chocolate" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -327,7 +327,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/coco = 1, /datum/reagent/consumable/sugar = 1)
 	trash_type = /obj/item/dice/fudge
 	tastes = list("fudge" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -337,7 +337,7 @@
 	icon_state = "chocoorange"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/sugar = 1)
 	tastes = list("chocolate" = 3, "oranges" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR | ORANGES
+	foodtypes = JUNKFOOD | SUGAR | ORANGES
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -348,7 +348,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("eggplant" = 3, "cheese" = 1)
-	foodtypes = LEVO | VEGETABLES | DAIRY
+	foodtypes = VEGETABLES | DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 	venue_value = FOOD_PRICE_NORMAL
 
@@ -359,7 +359,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("sweet potato" = 1)
-	foodtypes = LEVO | VEGETABLES | SUGAR
+	foodtypes = VEGETABLES | SUGAR
 	w_class = WEIGHT_CLASS_SMALL
 	burns_in_oven = TRUE
 
@@ -369,7 +369,7 @@
 	icon_state = "roastparsnip"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("parsnip" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/melonfruitbowl
@@ -379,7 +379,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 4)
 	w_class = WEIGHT_CLASS_NORMAL
 	tastes = list("melon" = 1)
-	foodtypes = LEVO | FRUIT
+	foodtypes = FRUIT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/melonkeg
@@ -390,7 +390,7 @@
 	max_volume = 80
 	bite_consumption = 5
 	tastes = list("grain alcohol" = 1, "fruit" = 1)
-	foodtypes = LEVO | FRUIT | ALCOHOL
+	foodtypes = FRUIT | ALCOHOL
 
 /obj/item/food/honeybar
 	name = "honey nut bar"
@@ -398,7 +398,7 @@
 	icon_state = "honeybar"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/honey = 5)
 	tastes = list("oats" = 3, "nuts" = 2, "honey" = 1)
-	foodtypes = LEVO | GRAIN | SUGAR
+	foodtypes = GRAIN | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -416,7 +416,7 @@
 	attack_verb_simple = list("slap", "slather")
 	w_class = WEIGHT_CLASS_BULKY
 	tastes = list("cherry" = 1, "crepe" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/food/lollipop
 	name = "lollipop"
@@ -426,7 +426,7 @@
 	inhand_icon_state = "lollipop_stick"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/iron = 10, /datum/reagent/consumable/sugar = 5, /datum/reagent/medicine/omnizine = 2) //Honk
 	tastes = list("candy" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	slot_flags = ITEM_SLOT_MASK
 	w_class = WEIGHT_CLASS_TINY
@@ -510,7 +510,7 @@
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_reagents,\
 				food_flags = food_flags,\
-				foodtypes = LEVO | foodtypes,\
+				foodtypes = foodtypes,\
 				volume = max_volume,\
 				eat_time = eat_time,\
 				tastes = tastes,\
@@ -546,7 +546,7 @@
 	worn_icon_state = "bubblegum"
 	food_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/medicine/sal_acid = 2, /datum/reagent/medicine/oxandrolone = 2) //Kek
 	tastes = list("candy")
-	foodtypes = LEVO | JUNKFOOD
+	foodtypes = JUNKFOOD
 	food_flags = FOOD_FINGER_FOOD
 	slot_flags = ITEM_SLOT_MASK
 	w_class = WEIGHT_CLASS_TINY
@@ -563,7 +563,7 @@
 	icon_state = "bran_requests"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/salt = 8)
 	tastes = list("bran" = 4, "raisins" = 3, "salt" = 1)
-	foodtypes = LEVO | GRAIN | FRUIT | BREAKFAST
+	foodtypes = GRAIN | FRUIT | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/butter
@@ -572,7 +572,7 @@
 	icon_state = "butter"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	tastes = list("butter" = 1)
-	foodtypes = LEVO | DAIRY
+	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/butter/examine(mob/user)
@@ -608,7 +608,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3)
 	gender = PLURAL
 	tastes = list("batter" = 3, "onion" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/pineappleslice
@@ -617,7 +617,7 @@
 	icon_state = "pineapple_slice"
 	juice_results = list(/datum/reagent/consumable/pineapplejuice = 3)
 	tastes = list("pineapple" = 1)
-	foodtypes = LEVO | FRUIT | PINEAPPLE
+	foodtypes = FRUIT | PINEAPPLE
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/tinychocolate
@@ -626,7 +626,7 @@
 	icon_state = "tiny_chocolate"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/sugar = 1, /datum/reagent/consumable/coco = 1)
 	tastes = list("chocolate" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR
+	foodtypes = JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -669,7 +669,7 @@
 	trash_type = /obj/item/trash/can/food/beans
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 9, /datum/reagent/consumable/ketchup = 4)
 	tastes = list("beans" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 
 /obj/item/food/canned/peaches
 	name = "canned peaches"
@@ -678,7 +678,7 @@
 	trash_type = /obj/item/trash/can/food/peaches
 	food_reagents = list(/datum/reagent/consumable/peachjuice = 20, /datum/reagent/consumable/sugar = 8, /datum/reagent/consumable/nutriment = 2)
 	tastes = list("peaches" = 7, "tin" = 1)
-	foodtypes = LEVO | FRUIT | SUGAR
+	foodtypes = FRUIT | SUGAR
 
 /obj/item/food/canned/peaches/maint
 	name = "Maintenance Peaches"
@@ -695,7 +695,7 @@
 	trash_type = /obj/item/trash/can/food/tomatoes
 	food_reagents = list(/datum/reagent/consumable/tomatojuice = 20, /datum/reagent/consumable/salt = 2)
 	tastes = list("tomato" = 7, "tin" = 1)
-	foodtypes = LEVO | VEGETABLES //fuck you, real life!
+	foodtypes = VEGETABLES //fuck you, real life!
 
 /obj/item/food/canned/pine_nuts
 	name = "canned pine nuts"
@@ -704,7 +704,7 @@
 	trash_type = /obj/item/trash/can/food/pine_nuts
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("pine nuts" = 1)
-	foodtypes = LEVO | NUTS
+	foodtypes = NUTS
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/crab_rangoon
@@ -714,7 +714,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 7, /datum/reagent/consumable/nutriment/vitamin = 5)
 	w_class = WEIGHT_CLASS_SMALL
 	tastes = list("cream cheese" = 4, "crab" = 3, "crispiness" = 2)
-	foodtypes = LEVO | MEAT | DAIRY | GRAIN
+	foodtypes = MEAT | DAIRY | GRAIN
 	venue_value = FOOD_PRICE_CHEAP
 
 
@@ -725,7 +725,7 @@
 	bite_consumption = 3
 	junkiness = 15
 	tastes = list("cardboard" = 3, "sadness" = 3)
-	foodtypes = LEVO | null //Don't ask what went into them. You're better off not knowing.
+	foodtypes = null //Don't ask what went into them. You're better off not knowing.
 	food_reagents = list(/datum/reagent/consumable/nutriment/stabilized = 10, /datum/reagent/consumable/nutriment = 2) //Won't make you fat. Will make you question your sanity.
 
 ///Override for checkliked callback
@@ -733,7 +733,7 @@
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_reagents,\
 				food_flags = food_flags,\
-				foodtypes = LEVO | foodtypes,\
+				foodtypes = foodtypes,\
 				volume = max_volume,\
 				eat_time = eat_time,\
 				tastes = tastes,\
@@ -752,7 +752,7 @@
 	icon_state = "ant_pop"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/sugar = 5, /datum/reagent/ants = 3)
 	tastes = list("candy" = 1, "insects" = 1)
-	foodtypes = LEVO | JUNKFOOD | SUGAR | BUGS
+	foodtypes = JUNKFOOD | SUGAR | BUGS
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -763,7 +763,7 @@
 	trash_type = /obj/item/trash/can/food/envirochow
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 9, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("dog food" = 5, "狗肉" = 3)
-	foodtypes = LEVO | MEAT | GROSS
+	foodtypes = MEAT | GROSS
 
 /obj/item/food/canned/envirochow/attack_animal(mob/living/simple_animal/user, list/modifiers)
 	if(!check_buffability(user))
@@ -811,7 +811,7 @@
 	microwaved_type = /obj/item/food/cheese_curds
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/cream = 1)
 	tastes = list("cream" = 1, "cheese" = 1)
-	foodtypes = LEVO | DAIRY
+	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cheese_curds
@@ -820,7 +820,7 @@
 	icon_state = "cheese_curds"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
 	tastes = list("cheese" = 1)
-	foodtypes = LEVO | DAIRY
+	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cheese_curds/Initialize(mapload)
@@ -833,7 +833,7 @@
 	icon_state = "firm_cheese"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
 	tastes = list("aged cheese" = 1)
-	foodtypes = LEVO | DAIRY | VEGETABLES
+	foodtypes = DAIRY | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/firm_cheese/MakeProcessable()
@@ -845,7 +845,7 @@
 	icon_state = "firm_cheese_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
 	tastes = list("aged cheese" = 1)
-	foodtypes = LEVO | DAIRY | VEGETABLES
+	foodtypes = DAIRY | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -858,7 +858,7 @@
 	icon_state = "mozzarella"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
 	tastes = list("mozzarella" = 1)
-	foodtypes = LEVO | DAIRY
+	foodtypes = DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/griddle_toast
@@ -867,7 +867,7 @@
 	icon_state = "griddle_toast"
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("toast" = 1)
-	foodtypes = LEVO | GRAIN
+	foodtypes = GRAIN
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -877,7 +877,7 @@
 	icon_state = "pesto"
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("pesto" = 1)
-	foodtypes = LEVO | VEGETABLES | DAIRY | NUTS
+	foodtypes = VEGETABLES | DAIRY | NUTS
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/tomato_sauce
@@ -886,7 +886,7 @@
 	icon_state = "tomato_sauce"
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("tomato" = 1, "herbs" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/bechamel_sauce
@@ -895,7 +895,7 @@
 	icon_state = "bechamel_sauce"
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("cream" = 1)
-	foodtypes = LEVO | DAIRY | GRAIN
+	foodtypes = DAIRY | GRAIN
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/roasted_bell_pepper
@@ -904,7 +904,7 @@
 	icon_state = "roasted_bell_pepper"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/char = 1)
 	tastes = list("bell pepper" = 1, "char" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	burns_in_oven = TRUE
 
 //DONK DINNER: THE INNOVATIVE WAY TO GET YOUR DAILY RECOMMENDED ALLOWANCE OF SALT... AND THEN SOME!
@@ -916,7 +916,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	microwaved_type = /obj/item/food/ready_donk/warm
 	tastes = list("food?" = 2, "laziness" = 1)
-	foodtypes = LEVO | MEAT | JUNKFOOD
+	foodtypes = MEAT | JUNKFOOD
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -941,28 +941,28 @@
 	desc = "Neon-orange mac n' cheese in seconds!"
 	microwaved_type = /obj/item/food/ready_donk/warm/mac_n_cheese
 	tastes = list("cheesy pasta" = 2, "laziness" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD
+	foodtypes = GRAIN | DAIRY | JUNKFOOD
 
 /obj/item/food/ready_donk/warm/mac_n_cheese
 	name = "warm Ready-Donk: Donk-a-Roni"
 	desc = "Neon-orange mac n' cheese, ready to eat!"
 	icon_state = "ready_donk_warm_mac"
 	tastes = list("cheesy pasta" = 2, "laziness" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD
+	foodtypes = GRAIN | DAIRY | JUNKFOOD
 
 /obj/item/food/ready_donk/donkhiladas
 	name = "\improper Ready-Donk: Donkhiladas"
 	desc = "Donk Co's signature Donkhiladas with Donk sauce, for an 'authentic' taste of Mexico."
 	microwaved_type = /obj/item/food/ready_donk/warm/donkhiladas
 	tastes = list("enchiladas" = 2, "laziness" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | MEAT | VEGETABLES | JUNKFOOD
+	foodtypes = GRAIN | DAIRY | MEAT | VEGETABLES | JUNKFOOD
 
 /obj/item/food/ready_donk/warm/donkhiladas
 	name = "warm Ready-Donk: Donkhiladas"
 	desc = "Donk Co's signature Donkhiladas with Donk sauce, served as hot as the Mexican sun."
 	icon_state = "ready_donk_warm_mex"
 	tastes = list("enchiladas" = 2, "laziness" = 1)
-	foodtypes = LEVO | GRAIN | DAIRY | MEAT | VEGETABLES | JUNKFOOD
+	foodtypes = GRAIN | DAIRY | MEAT | VEGETABLES | JUNKFOOD
 
 /obj/item/food/pierogi
 	name = "pierogi"
@@ -970,7 +970,7 @@
 	icon_state = "pierogi"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("potato" = 1, "onions" = 1)
-	foodtypes = LEVO | GRAIN | VEGETABLES
+	foodtypes = GRAIN | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/stuffed_cabbage
@@ -979,7 +979,7 @@
 	icon_state = "stuffed_cabbage"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("juicy meat" = 1, "rice" = 1, "cabbage" = 1)
-	foodtypes = LEVO | MEAT | VEGETABLES
+	foodtypes = MEAT | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/seaweedsheet
@@ -988,5 +988,5 @@
 	icon_state = "seaweedsheet"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("seaweed" = 1)
-	foodtypes = LEVO | VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
