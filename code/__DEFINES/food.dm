@@ -17,6 +17,8 @@
 #define SEAFOOD (1<<16)
 #define ORANGES (1<<17)
 #define BUGS (1<<18)
+#define DEXTRO (1<<19)
+#define LEVO (1<<20)
 
 /// A list of food type names, in order of their flags
 #define FOOD_FLAGS list( \
@@ -39,6 +41,8 @@
 	"SEAFOOD", \
 	"ORANGES", \
 	"BUGS", \
+	"DEXTRO", \
+	"LEVO", \
 )
 
 #define DRINK_NICE 1

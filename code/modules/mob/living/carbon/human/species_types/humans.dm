@@ -10,8 +10,8 @@
 	mutant_bodyparts = list("wings" = "None")
 	use_skintones = 1
 	skinned_type = /obj/item/stack/sheet/animalhide/human
-	disliked_food = GROSS | RAW | CLOTH | BUGS
-	liked_food = JUNKFOOD | FRIED
+	disliked_food = GROSS | RAW | CLOTH | BUGS | DEXTRO
+	liked_food = JUNKFOOD | FRIED | LEVO
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	payday_modifier = 1
 
