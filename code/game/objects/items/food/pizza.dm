@@ -5,7 +5,7 @@
 	max_volume = 80
 	food_reagents = list(/datum/reagent/consumable/nutriment = 28, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1)
-	foodtypes = GRAIN | DAIRY | VEGETABLES
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES
 	venue_value = FOOD_PRICE_CHEAP
 	burns_in_oven = TRUE
 	/// type is spawned 6 at a time and replaces this pizza when processed by cutting tool
@@ -14,7 +14,7 @@
 	var/boxtag = ""
 
 /obj/item/food/pizza/raw
-	foodtypes = GRAIN | DAIRY | VEGETABLES | RAW
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -31,7 +31,7 @@
 /obj/item/food/pizzaslice
 	icon = 'icons/obj/food/pizzaspaghetti.dmi'
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5)
-	foodtypes = GRAIN | DAIRY | VEGETABLES
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 	decomp_type = /obj/item/food/pizzaslice/moldy
 
@@ -45,7 +45,7 @@
 	icon_state = "pizzamargherita"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 25, /datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 	slice_type = /obj/item/food/pizzaslice/margherita
 	boxtag = "Margherita Deluxe"
 
@@ -53,7 +53,7 @@
 /obj/item/food/pizza/margherita/raw
 	name = "raw pizza margherita"
 	icon_state = "pizzamargherita_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -68,7 +68,7 @@
 	desc = "A slice of the most cheezy pizza in galaxy."
 	icon_state = "pizzamargheritaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 
 /obj/item/food/pizzaslice/margherita/Initialize(mapload)
 	. = ..()
@@ -79,14 +79,14 @@
 	desc = "Greasy pizza with delicious meat."
 	icon_state = "meatpizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 25, /datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 8)
-	foodtypes = GRAIN | VEGETABLES| DAIRY | MEAT
+	foodtypes = LEVO | GRAIN | VEGETABLES| DAIRY | MEAT
 	slice_type = /obj/item/food/pizzaslice/meat
 	boxtag = "Meatlovers' Supreme"
 
 /obj/item/food/pizza/meat/raw
 	name = "raw meatpizza"
 	icon_state = "meatpizza_raw"
-	foodtypes = GRAIN | VEGETABLES| DAIRY | MEAT | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES| DAIRY | MEAT | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -98,7 +98,7 @@
 	desc = "A nutritious slice of meatpizza."
 	icon_state = "meatpizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT
 
 /obj/item/food/pizza/mushroom
 	name = "mushroom pizza"
@@ -106,14 +106,14 @@
 	icon_state = "mushroompizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 28, /datum/reagent/consumable/nutriment/protein = 3,  /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "mushroom" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 	slice_type = /obj/item/food/pizzaslice/mushroom
 	boxtag = "Mushroom Special"
 
 /obj/item/food/pizza/mushroom/raw
 	name = "raw mushroom pizza"
 	icon_state = "mushroompizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -125,7 +125,7 @@
 	desc = "Maybe it is the last slice of pizza in your life."
 	icon_state = "mushroompizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "mushroom" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 
 
 /obj/item/food/pizza/vegetable
@@ -134,7 +134,7 @@
 	icon_state = "vegetablepizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 25, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 2, "cheese" = 1, "carrot" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 	slice_type = /obj/item/food/pizzaslice/vegetable
 	boxtag = "Gourmet Vegetable"
 	venue_value = FOOD_PRICE_NORMAL
@@ -142,7 +142,7 @@
 /obj/item/food/pizza/vegetable/raw
 	name = "raw vegetable pizza"
 	icon_state = "vegetablepizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -154,7 +154,7 @@
 	desc = "A slice of the most green pizza of all pizzas not containing green ingredients."
 	icon_state = "vegetablepizzaslice"
 	tastes = list("crust" = 1, "tomato" = 2, "cheese" = 1, "carrot" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 
 
 /obj/item/food/pizza/donkpocket
@@ -163,14 +163,14 @@
 	icon_state = "donkpocketpizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/protein = 15, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/medicine/omnizine = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1, "laziness" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD
 	slice_type = /obj/item/food/pizzaslice/donkpocket
 	boxtag = "Bangin' Donk"
 
 /obj/item/food/pizza/donkpocket/raw
 	name = "raw donkpocket pizza"
 	icon_state = "donkpocketpizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -182,7 +182,7 @@
 	desc = "Smells like donkpocket."
 	icon_state = "donkpocketpizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1, "laziness" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | JUNKFOOD
 
 
 /obj/item/food/pizza/dank
@@ -191,14 +191,14 @@
 	icon_state = "dankpizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 25, /datum/reagent/consumable/doctor_delight = 5, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 	slice_type = /obj/item/food/pizzaslice/dank
 	boxtag = "Fresh Herb"
 
 /obj/item/food/pizza/dank/raw
 	name = "raw dank pizza"
 	icon_state = "dankpizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -210,7 +210,7 @@
 	desc = "So good, man..."
 	icon_state = "dankpizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY
 
 
 /obj/item/food/pizza/sassysage
@@ -219,14 +219,14 @@
 	icon_state = "sassysagepizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/protein = 15, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT
 	slice_type = /obj/item/food/pizzaslice/sassysage
 	boxtag = "Sausage Lovers"
 
 /obj/item/food/pizza/sassysage/raw
 	name = "raw sassysage pizza"
 	icon_state = "sassysagepizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -238,7 +238,7 @@
 	desc = "Deliciously sassy."
 	icon_state = "sassysagepizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "meat" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT
 
 
 /obj/item/food/pizza/pineapple
@@ -247,14 +247,14 @@
 	icon_state = "pineapplepizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/consumable/pineapplejuice = 8)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "pineapple" = 2, "ham" = 2)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE
 	slice_type = /obj/item/food/pizzaslice/pineapple
 	boxtag = "Honolulu Chew"
 
 /obj/item/food/pizza/pineapple/raw
 	name = "raw Hawaiian pizza"
 	icon_state = "pineapplepizza_raw"
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE | RAW
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -266,7 +266,7 @@
 	desc = "A slice of delicious controversy."
 	icon_state = "pineapplepizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "pineapple" = 2, "ham" = 2)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT | FRUIT | PINEAPPLE
 
 
 // Moldly Pizza
@@ -277,7 +277,7 @@
 	icon_state = "moldy_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/peptides = 3, /datum/reagent/consumable/tomatojuice = 1, /datum/reagent/toxin/amatoxin = 2)
 	tastes = list("stale crust" = 1, "rancid cheese" = 2, "mushroom" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | GROSS
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | GROSS
 	preserved_food = TRUE
 
 /obj/item/food/pizzaslice/moldy/bacteria
@@ -303,7 +303,7 @@
 /obj/item/food/pizza/arnold/raw
 	name = "raw Arnold pizza"
 	icon_state = "arnoldpizza_raw"
-	foodtypes = GRAIN | DAIRY | VEGETABLES | RAW
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | RAW
 	burns_in_oven = FALSE
 	slice_type = null
 
@@ -345,7 +345,7 @@
 	desc = "I come over, maybe I give you a pizza, maybe I break off your arm."
 	icon_state = "arnoldpizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "pepperoni" = 2, "9 millimeter bullets" = 2)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | MEAT
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | MEAT
 
 /obj/item/food/pizzaslice/arnold/attack(mob/living/target, mob/living/user)
 	. =..()
@@ -362,7 +362,7 @@
 	icon_state = "antpizza"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/ants = 25, /datum/reagent/consumable/tomatojuice = 10, /datum/reagent/consumable/nutriment/vitamin = 4, /datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "insects" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | BUGS
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | BUGS
 	slice_type = /obj/item/food/pizzaslice/ants
 	boxtag = "Anthill Deluxe"
 
@@ -371,4 +371,4 @@
 	desc = "The key to a perfect slice of pizza is not to overdo it with the ants."
 	icon_state = "antpizzaslice"
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1, "insects" = 1)
-	foodtypes = GRAIN | VEGETABLES | DAIRY | BUGS
+	foodtypes = LEVO | GRAIN | VEGETABLES | DAIRY | BUGS

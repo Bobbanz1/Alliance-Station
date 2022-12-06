@@ -4,7 +4,7 @@
 	max_volume = 80
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 1)
-	foodtypes = GRAIN | DAIRY
+	foodtypes = LEVO | GRAIN | DAIRY
 
 /obj/item/food/cake/Initialize(mapload)
 	. = ..()
@@ -14,7 +14,7 @@
 	icon = 'icons/obj/food/piecake.dmi'
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cake" = 1)
-	foodtypes = GRAIN | DAIRY
+	foodtypes = LEVO | GRAIN | DAIRY
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/cake/plain
@@ -23,7 +23,7 @@
 	icon_state = "plaincake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 30, /datum/reagent/consumable/nutriment/vitamin = 7)
 	tastes = list("sweetness" = 2, "cake" = 5)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 	burns_in_oven = TRUE
 
 
@@ -35,7 +35,7 @@
 	desc = "Just a slice of cake, it is enough for everyone."
 	icon_state = "plaincake_slice"
 	tastes = list("sweetness" = 2, "cake" = 5)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/carrot
 	name = "carrot cake"
@@ -43,7 +43,7 @@
 	icon_state = "carrotcake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 2, "carrot" = 1)
-	foodtypes = GRAIN | DAIRY | VEGETABLES | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 
@@ -56,7 +56,7 @@
 	icon_state = "carrotcake_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cake" = 5, "sweetness" = 2, "carrot" = 1)
-	foodtypes = GRAIN | DAIRY | VEGETABLES | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | SUGAR
 
 /obj/item/food/cake/brain
 	name = "brain cake"
@@ -64,7 +64,7 @@
 	icon_state = "braincake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 15, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/medicine/mannitol = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 2, "brains" = 1)
-	foodtypes = GRAIN | DAIRY | MEAT | GROSS | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | MEAT | GROSS | SUGAR
 
 /obj/item/food/cake/brain/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/brain, 5, 30, table_required = TRUE)
@@ -75,7 +75,7 @@
 	icon_state = "braincakeslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/medicine/mannitol = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cake" = 5, "sweetness" = 2, "brains" = 1)
-	foodtypes = GRAIN | DAIRY | MEAT | GROSS | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | MEAT | GROSS | SUGAR
 
 /obj/item/food/cake/cheese
 	name = "cheese cake"
@@ -83,7 +83,7 @@
 	icon_state = "cheesecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/consumable/nutriment/protein = 5)
 	tastes = list("cake" = 4, "cream cheese" = 3)
-	foodtypes = GRAIN | DAIRY
+	foodtypes = LEVO | GRAIN | DAIRY
 	venue_value = FOOD_PRICE_CHEAP
 
 
@@ -96,7 +96,7 @@
 	icon_state = "cheesecake_slice"
 	tastes = list("cake" = 4, "cream cheese" = 3)
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment/vitamin = 1.3)
-	foodtypes = GRAIN | DAIRY
+	foodtypes = LEVO | GRAIN | DAIRY
 
 /obj/item/food/cake/orange
 	name = "orange cake"
@@ -104,7 +104,7 @@
 	icon_state = "orangecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("cake" = 5, "sweetness" = 2, "oranges" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR | ORANGES
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR | ORANGES
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/orange/MakeProcessable()
@@ -115,7 +115,7 @@
 	desc = "Just a slice of cake, it is enough for everyone."
 	icon_state = "orangecake_slice"
 	tastes = list("cake" = 5, "sweetness" = 2, "oranges" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR | ORANGES
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR | ORANGES
 
 /obj/item/food/cake/lime
 	name = "lime cake"
@@ -123,7 +123,7 @@
 	icon_state = "limecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("cake" = 5, "sweetness" = 2, "unbearable sourness" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/lime/MakeProcessable()
@@ -134,7 +134,7 @@
 	desc = "Just a slice of cake, it is enough for everyone."
 	icon_state = "limecake_slice"
 	tastes = list("cake" = 5, "sweetness" = 2, "unbearable sourness" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/lemon
 	name = "lemon cake"
@@ -142,7 +142,7 @@
 	icon_state = "lemoncake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("cake" = 5, "sweetness" = 2, "sourness" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/lemon/MakeProcessable()
@@ -153,7 +153,7 @@
 	desc = "Just a slice of cake, it is enough for everyone."
 	icon_state = "lemoncake_slice"
 	tastes = list("cake" = 5, "sweetness" = 2, "sourness" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/chocolate
 	name = "chocolate cake"
@@ -161,7 +161,7 @@
 	icon_state = "chocolatecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("cake" = 5, "sweetness" = 1, "chocolate" = 4)
-	foodtypes = GRAIN | DAIRY | JUNKFOOD | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/chocolate/MakeProcessable()
@@ -172,7 +172,7 @@
 	desc = "Just a slice of cake, it is enough for everyone."
 	icon_state = "chocolatecake_slice"
 	tastes = list("cake" = 5, "sweetness" = 1, "chocolate" = 4)
-	foodtypes = GRAIN | DAIRY | JUNKFOOD | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD | SUGAR
 
 /obj/item/food/cake/birthday
 	name = "birthday cake"
@@ -180,7 +180,7 @@
 	icon_state = "birthdaycake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/sprinkles = 10, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 1)
-	foodtypes = GRAIN | DAIRY | JUNKFOOD | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD | SUGAR
 
 /obj/item/food/cake/birthday/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/birthday, 5, 30, table_required = TRUE)
@@ -195,7 +195,7 @@
 	icon_state = "birthdaycakeslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/sprinkles = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cake" = 5, "sweetness" = 1)
-	foodtypes = GRAIN | DAIRY | JUNKFOOD | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | JUNKFOOD | SUGAR
 
 /obj/item/food/cake/birthday/energy
 	name = "energy cake"
@@ -251,7 +251,7 @@
 
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("cake" = 5, "sweetness" = 1, "apple" = 1)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/apple/MakeProcessable()
@@ -262,7 +262,7 @@
 	desc = "A slice of heavenly cake."
 	icon_state = "applecakeslice"
 	tastes = list("cake" = 5, "sweetness" = 1, "apple" = 1)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/slimecake
 	name = "Slime cake"
@@ -270,7 +270,7 @@
 	icon_state = "slimecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 1, "slime" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/slimecake/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/slimecake, 5, 30, table_required = TRUE)
@@ -280,7 +280,7 @@
 	desc = "A slice of slime cake."
 	icon_state = "slimecake_slice"
 	tastes = list("cake" = 5, "sweetness" = 1, "slime" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/pumpkinspice
 	name = "pumpkin spice cake"
@@ -288,7 +288,7 @@
 	icon_state = "pumpkinspicecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 1, "pumpkin" = 1)
-	foodtypes = GRAIN | DAIRY | VEGETABLES | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | SUGAR
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/pumpkinspice/MakeProcessable()
@@ -299,7 +299,7 @@
 	desc = "A spicy slice of pumpkin goodness."
 	icon_state = "pumpkinspicecakeslice"
 	tastes = list("cake" = 5, "sweetness" = 1, "pumpkin" = 1)
-	foodtypes = GRAIN | DAIRY | VEGETABLES | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | VEGETABLES | SUGAR
 
 /obj/item/food/cake/bsvc // blackberry strawberries vanilla cake
 	name = "blackberry and strawberry vanilla cake"
@@ -307,7 +307,7 @@
 	icon_state = "blackbarry_strawberries_cake_vanilla_cake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("blackberry" = 2, "strawberries" = 2, "vanilla" = 2, "sweetness" = 2, "cake" = 3)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/bsvc/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/bsvc, 5, 30, table_required = TRUE)
@@ -317,7 +317,7 @@
 	desc = "Just a slice of cake  filled with assortment of blackberries and strawberries!"
 	icon_state = "blackbarry_strawberries_cake_vanilla_slice"
 	tastes = list("blackberry" = 2, "strawberries" = 2, "vanilla" = 2, "sweetness" = 2, "cake" = 3)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/bscc // blackbarry strawberries chocolate cake <- this is a relic from before resprite
 	name = "strawberry chocolate cake"
@@ -325,7 +325,7 @@
 	icon_state = "liars_cake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/coco = 5)
 	tastes = list("blackberry" = 2, "strawberries" = 2, "chocolate" = 2, "sweetness" = 2, "cake" = 3)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/bscc/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/bscc, 5, 30, table_required = TRUE)
@@ -335,7 +335,7 @@
 	desc = "Just a slice of cake with five strawberries on top. For some reason, this configuration of cake is particularly aesthetically pleasing to AIs in SELF." //yes, I know the one referenced has cherries, but I'm not implementing a new cake today.
 	icon_state = "liars_slice"
 	tastes = list("strawberries" = 2, "chocolate" = 2, "sweetness" = 2, "cake" = 3)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/holy_cake
 	name = "angel food cake"
@@ -343,7 +343,7 @@
 	icon_state = "holy_cake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/water/holywater = 10)
 	tastes = list("cake" = 5, "sweetness" = 1, "clouds" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/holy_cake/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/holy_cake_slice, 5, 30, table_required = TRUE)
@@ -353,7 +353,7 @@
 	desc = "A slice of heavenly cake."
 	icon_state = "holy_cake_slice"
 	tastes = list("cake" = 5, "sweetness" = 1, "clouds" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/pound_cake
 	name = "pound cake"
@@ -361,7 +361,7 @@
 	icon_state = "pound_cake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 60, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 5, "sweetness" = 1, "batter" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR | JUNKFOOD
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR | JUNKFOOD
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/cake/pound_cake/MakeProcessable()
@@ -373,7 +373,7 @@
 	icon_state = "pound_cake_slice"
 	tastes = list("cake" = 5, "sweetness" = 5, "batter" = 1)
 	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/consumable/nutriment/vitamin = 0.5)
-	foodtypes = GRAIN | DAIRY | SUGAR | JUNKFOOD
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR | JUNKFOOD
 
 /obj/item/food/cake/hardware_cake
 	name = "hardware cake"
@@ -381,7 +381,7 @@
 	icon_state = "hardware_cake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/toxin/acid = 15, /datum/reagent/fuel/oil = 15)
 	tastes = list("acid" = 3, "metal" = 4, "glass" = 5)
-	foodtypes = GRAIN | GROSS
+	foodtypes = LEVO | GRAIN | GROSS
 
 /obj/item/food/cake/hardware_cake/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/hardware_cake_slice, 5, 30, table_required = TRUE)
@@ -392,7 +392,7 @@
 	icon_state = "hardware_cake_slice"
 	tastes = list("acid" = 3, "metal" = 4, "glass" = 5)
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/toxin/acid = 3, /datum/reagent/fuel/oil = 3)
-	foodtypes = GRAIN | GROSS
+	foodtypes = LEVO | GRAIN | GROSS
 
 /obj/item/food/cake/vanilla_cake
 	name = "vanilla cake"
@@ -400,7 +400,7 @@
 	icon_state = "vanillacake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/sugar = 15, /datum/reagent/consumable/vanilla = 15)
 	tastes = list("cake" = 1, "sugar" = 1, "vanilla" = 10)
-	foodtypes = GRAIN | SUGAR | DAIRY
+	foodtypes = LEVO | GRAIN | SUGAR | DAIRY
 
 /obj/item/food/cake/vanilla_cake/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/vanilla_slice, 5, 30, table_required = TRUE)
@@ -411,7 +411,7 @@
 	icon_state = "vanillacake_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/vanilla = 3)
 	tastes = list("cake" = 1, "sugar" = 1, "vanilla" = 10)
-	foodtypes = GRAIN | SUGAR | DAIRY
+	foodtypes = LEVO | GRAIN | SUGAR | DAIRY
 
 /obj/item/food/cake/clown_cake
 	name = "clown cake"
@@ -419,7 +419,7 @@
 	icon_state = "clowncake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/sugar = 15)
 	tastes = list("cake" = 1, "sugar" = 1, "joy" = 10)
-	foodtypes = GRAIN | SUGAR | DAIRY
+	foodtypes = LEVO | GRAIN | SUGAR | DAIRY
 
 /obj/item/food/cake/clown_cake/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/clown_slice, 5, 30, table_required = TRUE)
@@ -430,7 +430,7 @@
 	icon_state = "clowncake_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/sugar = 3)
 	tastes = list("cake" = 1, "sugar" = 1, "joy" = 10)
-	foodtypes = GRAIN | SUGAR | DAIRY
+	foodtypes = LEVO | GRAIN | SUGAR | DAIRY
 
 /obj/item/food/cake/trumpet
 	name = "spaceman's cake"
@@ -438,7 +438,7 @@
 	icon_state = "trumpetcake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/cream = 5, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/berryjuice = 5)
 	tastes = list("cake" = 4, "violets" = 2, "jam" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/trumpet/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/trumpet, 5, 30, table_required = TRUE)
@@ -449,7 +449,7 @@
 	icon_state = "trumpetcakeslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/cream = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/berryjuice = 1)
 	tastes = list("cake" = 4, "violets" = 2, "jam" = 2)
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/brioche
 	name = "brioche cake"
@@ -457,7 +457,7 @@
 	icon_state = "briochecake"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("cake" = 4, "butter" = 2, "cream" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/brioche/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/brioche, 6, 30, table_required = TRUE)
@@ -468,7 +468,7 @@
 	icon_state = "briochecake_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("cake" = 4, "butter" = 2, "cream" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 
 /obj/item/food/cake/pavlova
 	name = "pavlova"
@@ -476,7 +476,7 @@
 	icon_state = "pavlova"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("meringue" = 5, "creaminess" = 1, "berries" = 1)
-	foodtypes = DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/pavlova/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/pavlova, 5, 30, table_required = TRUE)
@@ -486,10 +486,10 @@
 	desc = "A cracked slice of pavlova stacked with berries. You even got it sliced in such a way that more berries ended up on your slice, how delightfully devilish."
 	icon_state = "pavlova_slice"
 	tastes = list("meringue" = 5, "creaminess" = 1, "berries" = 1)
-	foodtypes = DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cakeslice/pavlova/nuts
-	foodtypes = NUTS | FRUIT | SUGAR
+	foodtypes = LEVO | NUTS | FRUIT | SUGAR
 
 /obj/item/food/cake/fruit
 	name = "english fruitcake"
@@ -499,7 +499,7 @@
 	tastes = list("dried fruit" = 5, "treacle" = 2, "christmas" = 2)
 	force = 7
 	throwforce = 7
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cake/fruit/MakeProcessable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/cakeslice/fruit, 5, 30, table_required = TRUE)
@@ -512,7 +512,7 @@
 	tastes = list("dried fruit" = 5, "treacle" = 2, "christmas" = 2)
 	force = 2
 	throwforce = 2
-	foodtypes = GRAIN | DAIRY | FRUIT | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | FRUIT | SUGAR
 
 /obj/item/food/cakeslice/fruit/Initialize(mapload)
 	. = ..()

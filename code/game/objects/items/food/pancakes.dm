@@ -7,7 +7,7 @@
 	inhand_icon_state = "pancakes"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("pancakes" = 1)
-	foodtypes = GRAIN | SUGAR | BREAKFAST
+	foodtypes = LEVO | GRAIN | SUGAR | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 	venue_value = FOOD_PRICE_CHEAP

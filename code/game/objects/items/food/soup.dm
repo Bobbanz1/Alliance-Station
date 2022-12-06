@@ -6,7 +6,7 @@
 	max_volume = 80
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("tasteless soup" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 	eatverbs = list("slurp", "sip", "inhale", "drink")
 	venue_value = FOOD_PRICE_CHEAP
 
@@ -31,7 +31,7 @@
 	icon_state = "meatballsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/water = 5)
 	tastes = list("meat" = 1)
-	foodtypes = MEAT
+	foodtypes = LEVO | MEAT
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/slime
@@ -40,7 +40,7 @@
 	icon_state = "slimesoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/toxin/slimejelly = 10, /datum/reagent/consumable/nutriment/vitamin = 9, /datum/reagent/water = 5)
 	tastes = list("slime" = 1)
-	foodtypes = TOXIC | SUGAR
+	foodtypes = LEVO | TOXIC | SUGAR
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/blood
@@ -49,7 +49,7 @@
 	icon_state = "tomatosoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/blood = 10, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("iron" = 1)
-	foodtypes = GROSS
+	foodtypes = LEVO | GROSS
 
 /obj/item/food/soup/wingfangchu
 	name = "wing fang chu"
@@ -58,7 +58,7 @@
 	trash_type = /obj/item/reagent_containers/glass/bowl
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 9, /datum/reagent/consumable/soysauce = 10, /datum/reagent/consumable/nutriment/vitamin = 7)
 	tastes = list("soy" = 1)
-	foodtypes = MEAT
+	foodtypes = LEVO | MEAT
 
 /obj/item/food/soup/clownstears
 	name = "clown's tears"
@@ -66,7 +66,7 @@
 	icon_state = "clownstears"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/banana = 10, /datum/reagent/lube = 5, /datum/reagent/consumable/nutriment/vitamin = 16, /datum/reagent/consumable/clownstears = 10)
 	tastes = list("a bad joke" = 1)
-	foodtypes = FRUIT | SUGAR
+	foodtypes = LEVO | FRUIT | SUGAR
 
 /obj/item/food/soup/vegetable
 	name = "vegetable soup"
@@ -74,7 +74,7 @@
 	icon_state = "vegetablesoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 8)
 	tastes = list("vegetables" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/nettle
@@ -83,7 +83,7 @@
 	icon_state = "nettlesoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 9, /datum/reagent/medicine/omnizine = 5)
 	tastes = list("nettles" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/mystery
@@ -116,7 +116,7 @@
 	icon_state = "hotchili"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/capsaicin = 3, /datum/reagent/consumable/tomatojuice = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("hot peppers" = 1)
-	foodtypes = VEGETABLES | MEAT
+	foodtypes = LEVO | VEGETABLES | MEAT
 	venue_value = FOOD_PRICE_NORMAL
 /obj/item/food/soup/coldchili
 	name = "cold chili"
@@ -124,7 +124,7 @@
 	icon_state = "coldchili"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/frostoil = 3, /datum/reagent/consumable/tomatojuice = 4, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("tomato" = 1, "mint" = 1)
-	foodtypes = VEGETABLES | MEAT
+	foodtypes = LEVO | VEGETABLES | MEAT
 
 /obj/item/food/soup/clownchili
 	name = "chili con carnival"
@@ -132,7 +132,7 @@
 	icon_state = "clownchili"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/tomatojuice = 4, /datum/reagent/consumable/nutriment/vitamin = 4, /datum/reagent/consumable/banana = 1, /datum/reagent/consumable/laughter = 1)
 	tastes = list("tomato" = 1, "hot peppers" = 2, "clown feet" = 2, "kind of funny" = 2, "someone's parents" = 2)
-	foodtypes = VEGETABLES | MEAT
+	foodtypes = LEVO | VEGETABLES | MEAT
 
 /obj/item/food/soup/monkeysdelight
 	name = "monkey's delight"
@@ -140,7 +140,7 @@
 	icon_state = "monkeysdelight"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3,  /datum/reagent/consumable/nutriment/protein = 9, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 10)
 	tastes = list("the jungle" = 1, "banana" = 1)
-	foodtypes = FRUIT
+	foodtypes = LEVO | FRUIT
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/tomato
@@ -149,7 +149,7 @@
 	icon_state = "tomatosoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/tomatojuice = 10, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("tomato" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/soup/tomato/eyeball
 	name = "eyeball soup"
@@ -157,7 +157,7 @@
 	icon_state = "eyeballsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/tomatojuice = 10, /datum/reagent/consumable/nutriment/vitamin = 4, /datum/reagent/liquidgibs = 3)
 	tastes = list("tomato" = 1, "squirming" = 1)
-	foodtypes = MEAT | GROSS
+	foodtypes = LEVO | MEAT | GROSS
 
 /obj/item/food/soup/miso
 	name = "misosoup"
@@ -165,7 +165,7 @@
 	icon_state = "misosoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("miso" = 1)
-	foodtypes = VEGETABLES | BREAKFAST
+	foodtypes = LEVO | VEGETABLES | BREAKFAST
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/mushroom
@@ -174,14 +174,14 @@
 	icon_state = "mushroomsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("mushroom" = 1)
-	foodtypes = VEGETABLES | DAIRY
+	foodtypes = LEVO | VEGETABLES | DAIRY
 
 /obj/item/food/soup/beet
 	name = "beet soup"
 	desc = "Wait, how do you spell it again..?"
 	icon_state = "beetsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 6)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/soup/beet/Initialize(mapload)
 	. = ..()
@@ -196,7 +196,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/drug/mushroomhallucinogen = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("jelly" = 1, "mushroom" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/soup/amanitajelly
 	name = "amanita jelly"
@@ -205,7 +205,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/drug/mushroomhallucinogen = 3, /datum/reagent/toxin/amatoxin = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("jelly" = 1, "mushroom" = 1)
-	foodtypes = VEGETABLES | TOXIC
+	foodtypes = LEVO | VEGETABLES | TOXIC
 
 /obj/item/food/soup/stew
 	name = "stew"
@@ -215,7 +215,7 @@
 	bite_consumption = 7
 	max_volume = 100
 	tastes = list("tomato" = 1, "carrot" = 1)
-	foodtypes = VEGETABLES | MEAT
+	foodtypes = LEVO | VEGETABLES | MEAT
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/sweetpotato
@@ -224,7 +224,7 @@
 	icon_state = "sweetpotatosoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("sweet potato" = 1)
-	foodtypes = VEGETABLES | SUGAR
+	foodtypes = LEVO | VEGETABLES | SUGAR
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/beet/red
@@ -233,7 +233,7 @@
 	icon_state = "redbeetsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("beet" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/soup/onion
 	name = "french onion soup"
@@ -241,7 +241,7 @@
 	icon_state = "onionsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/tomatojuice = 8, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("caramelized onions" = 1)
-	foodtypes = VEGETABLES | DAIRY
+	foodtypes = LEVO | VEGETABLES | DAIRY
 
 /obj/item/food/soup/bisque
 	name = "bisque"
@@ -249,7 +249,7 @@
 	icon_state = "bisque"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("creamy texture" = 1, "crab" = 4)
-	foodtypes = MEAT
+	foodtypes = LEVO | MEAT
 	venue_value = FOOD_PRICE_EXOTIC
 
 /obj/item/food/soup/electron
@@ -258,7 +258,7 @@
 	icon_state = "electronsoup"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/liquidelectricity/enriched = 12)
 	tastes = list("mushroom" = 1, "electrons" = 4)
-	foodtypes = VEGETABLES | TOXIC
+	foodtypes = LEVO | VEGETABLES | TOXIC
 
 /obj/item/food/soup/bungocurry
 	name = "bungo curry"
@@ -266,7 +266,7 @@
 	icon_state = "bungocurry"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/bungojuice = 9, /datum/reagent/consumable/capsaicin = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("bungo" = 2, "hot curry" = 4, "tropical sweetness" = 1)
-	foodtypes = VEGETABLES | FRUIT | DAIRY
+	foodtypes = LEVO | VEGETABLES | FRUIT | DAIRY
 
 /obj/item/food/soup/mammi
 	name = "Mammi"
@@ -280,7 +280,7 @@
 	icon_state = "peasoup"
 	food_reagents = list (/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("creamy peas"= 2, "parsnip" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/soup/indian_curry
 	name = "indian chicken curry"
@@ -288,7 +288,7 @@
 	icon_state = "indian_curry"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("chicken" = 2, "creamy curry" = 4, "earthy heat" = 1)
-	foodtypes = VEGETABLES | MEAT | DAIRY
+	foodtypes = LEVO | VEGETABLES | MEAT | DAIRY
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/soup/oatmeal
@@ -297,7 +297,7 @@
 	icon_state = "oatmeal"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/milk = 10, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("oats" = 1, "milk" = 1)
-	foodtypes = DAIRY | GRAIN | BREAKFAST
+	foodtypes = LEVO | DAIRY | GRAIN | BREAKFAST
 
 /obj/item/food/soup/zurek
 	name = "zurek"
@@ -305,5 +305,5 @@
 	icon_state = "zurek"
 	food_reagents = list (/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/nutriment/protein = 2)
 	tastes = list("creamy vegetables"= 2, "sausage" = 1)
-	foodtypes = VEGETABLES | MEAT | GRAIN | BREAKFAST
-	
+	foodtypes = LEVO | VEGETABLES | MEAT | GRAIN | BREAKFAST
+
