@@ -7,7 +7,7 @@
 	icon_state = "chocolateegg"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/sugar = 2, /datum/reagent/consumable/coco = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("chocolate" = 4, "sweetness" = 1)
-	foodtypes = JUNKFOOD | SUGAR
+	foodtypes = LEVO | JUNKFOOD | SUGAR
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
@@ -17,7 +17,7 @@
 	icon_state = "egg"
 	food_reagents = list(/datum/reagent/consumable/eggyolk = 2, /datum/reagent/consumable/eggwhite = 4)
 	microwaved_type = /obj/item/food/boiledegg
-	foodtypes = MEAT | RAW
+	foodtypes = LEVO | MEAT | RAW
 	w_class = WEIGHT_CLASS_TINY
 	ant_attracting = FALSE
 	decomp_type = /obj/item/food/egg/rotten
@@ -27,7 +27,7 @@
 /obj/item/food/egg/rotten
 	food_reagents = list(/datum/reagent/consumable/eggrot = 10, /datum/reagent/consumable/mold = 10)
 	microwaved_type = /obj/item/food/boiledegg/rotten
-	foodtypes = GROSS
+	foodtypes = LEVO | GROSS
 	preserved_food = TRUE
 
 /obj/item/food/egg/gland
@@ -140,7 +140,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/eggyolk = 2 , /datum/reagent/consumable/nutriment/vitamin = 2)
 	bite_consumption = 1
 	tastes = list("egg" = 4)
-	foodtypes = MEAT | FRIED | BREAKFAST
+	foodtypes = LEVO | MEAT | FRIED | BREAKFAST
 	w_class = WEIGHT_CLASS_SMALL
 	burns_on_grill = TRUE
 
@@ -152,7 +152,7 @@
 	bite_consumption = 1
 	tastes = list("raw egg" = 6, "sliminess" = 1)
 	eatverbs = list("gulp down")
-	foodtypes = MEAT | RAW
+	foodtypes = LEVO | MEAT | RAW
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/food/rawegg/MakeGrillable()
@@ -164,7 +164,7 @@
 	icon_state = "egg"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("egg" = 1)
-	foodtypes = MEAT | BREAKFAST
+	foodtypes = LEVO | MEAT | BREAKFAST
 	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 	ant_attracting = FALSE
@@ -175,14 +175,14 @@
 	desc = "A good egg with a side of sausages."
 	icon_state = "eggsausage"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/nutriment = 4)
-	foodtypes = MEAT | FRIED | BREAKFAST
+	foodtypes = LEVO | MEAT | FRIED | BREAKFAST
 	tastes = list("egg" = 4, "meat" = 4)
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/boiledegg/rotten
 	food_reagents = list(/datum/reagent/consumable/eggrot = 10)
 	tastes = list("rotten egg" = 1)
-	foodtypes = GROSS
+	foodtypes = LEVO | GROSS
 	preserved_food = TRUE
 
 /obj/item/food/omelette //FUCK THIS
@@ -193,7 +193,7 @@
 	bite_consumption = 1
 	w_class = WEIGHT_CLASS_SMALL
 	tastes = list("egg" = 1, "cheese" = 1)
-	foodtypes = MEAT | BREAKFAST | DAIRY
+	foodtypes = LEVO | MEAT | BREAKFAST | DAIRY
 	venue_value = FOOD_PRICE_CHEAP
 
 /obj/item/food/omelette/attackby(obj/item/item, mob/user, params)
@@ -221,7 +221,7 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 6, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment = 3)
 	w_class = WEIGHT_CLASS_SMALL
 	tastes = list("egg" = 1, "bacon" = 1, "bun" = 1)
-	foodtypes = MEAT | BREAKFAST | GRAIN
+	foodtypes = LEVO | MEAT | BREAKFAST | GRAIN
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/eggwrap
@@ -230,7 +230,7 @@
 	icon_state = "eggwrap"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("egg" = 1)
-	foodtypes = MEAT | VEGETABLES
+	foodtypes = LEVO | MEAT | VEGETABLES
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/chawanmushi
@@ -239,4 +239,4 @@
 	icon_state = "chawanmushi"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("custard" = 1)
-	foodtypes = MEAT | VEGETABLES
+	foodtypes = LEVO | MEAT | VEGETABLES

@@ -16,7 +16,8 @@
 	fixed_mut_color = "#9692BE"
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = GROSS | RAW | CLOTH | BUGS
-	liked_food = JUNKFOOD | FRIED
+	liked_food = JUNKFOOD | FRIED | DEXTRO
+	toxic_food = LEVO
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	species_language_holder = /datum/language_holder/quarian
 	payday_modifier = 0.75

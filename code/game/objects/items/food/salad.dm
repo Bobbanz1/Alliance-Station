@@ -7,7 +7,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("leaves" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 	eatverbs = list("devour", "nibble", "gnaw", "gobble", "chomp") //who the fuck gnaws and devours on a salad
 	venue_value = FOOD_PRICE_NORMAL
 
@@ -17,7 +17,7 @@
 	icon_state = "aesirsalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 12)
 	tastes = list("leaves" = 1)
-	foodtypes = VEGETABLES | FRUIT
+	foodtypes = LEVO | VEGETABLES | FRUIT
 
 /obj/item/food/salad/herbsalad
 	name = "herb salad"
@@ -25,7 +25,7 @@
 	icon_state = "herbsalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("leaves" = 1, "apple" = 1)
-	foodtypes = VEGETABLES | FRUIT
+	foodtypes = LEVO | VEGETABLES | FRUIT
 
 /obj/item/food/salad/validsalad
 	name = "valid salad"
@@ -33,7 +33,7 @@
 	icon_state = "validsalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 5, /datum/reagent/consumable/doctor_delight = 8, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("leaves" = 1, "potato" = 1, "meat" = 1, "valids" = 1)
-	foodtypes = VEGETABLES | MEAT | FRIED | FRUIT
+	foodtypes = LEVO | VEGETABLES | MEAT | FRIED | FRUIT
 
 /obj/item/food/salad/fruit
 	name = "fruit salad"
@@ -41,7 +41,7 @@
 	icon_state = "fruitsalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("fruit" = 1)
-	foodtypes = FRUIT
+	foodtypes = LEVO | FRUIT
 
 /obj/item/food/salad/jungle
 	name = "jungle salad"
@@ -49,7 +49,7 @@
 	icon_state = "junglesalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 7)
 	tastes = list("fruit" = 1, "the jungle" = 1)
-	foodtypes = FRUIT
+	foodtypes = LEVO | FRUIT
 
 /obj/item/food/salad/citrusdelight
 	name = "citrus delight"
@@ -57,7 +57,7 @@
 	icon_state = "citrusdelight"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 11, /datum/reagent/consumable/nutriment/vitamin = 7)
 	tastes = list("sourness" = 1, "leaves" = 1)
-	foodtypes = FRUIT | ORANGES
+	foodtypes = LEVO | FRUIT | ORANGES
 
 /obj/item/food/salad/ricebowl
 	name = "ricebowl"
@@ -66,7 +66,7 @@
 	microwaved_type = /obj/item/food/salad/boiledrice
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	tastes = list("rice" = 1)
-	foodtypes = GRAIN | RAW
+	foodtypes = LEVO | GRAIN | RAW
 
 /obj/item/food/salad/boiledrice
 	name = "boiled rice"
@@ -74,7 +74,7 @@
 	icon_state = "boiledrice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("rice" = 1)
-	foodtypes = GRAIN | BREAKFAST
+	foodtypes = LEVO | GRAIN | BREAKFAST
 
 /obj/item/food/salad/ricepudding
 	name = "rice pudding"
@@ -82,7 +82,7 @@
 	icon_state = "ricepudding"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("rice" = 1, "sweetness" = 1)
-	foodtypes = GRAIN | DAIRY | SUGAR
+	foodtypes = LEVO | GRAIN | DAIRY | SUGAR
 	venue_value = FOOD_PRICE_NORMAL
 
 /obj/item/food/salad/ricepork
@@ -91,7 +91,7 @@
 	icon_state = "riceporkbowl"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("rice" = 1, "meat" = 1)
-	foodtypes = GRAIN | MEAT
+	foodtypes = LEVO | GRAIN | MEAT
 
 /obj/item/food/salad/risotto
 	name = "risotto"
@@ -99,7 +99,7 @@
 	icon_state = "risotto"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("rice" = 1, "cheese" = 1)
-	foodtypes = GRAIN | DAIRY
+	foodtypes = LEVO | GRAIN | DAIRY
 	venue_value = FOOD_PRICE_EXOTIC
 
 /obj/item/food/salad/eggbowl
@@ -108,7 +108,7 @@
 	icon_state = "eggbowl"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("rice" = 1, "egg" = 1)
-	foodtypes = GRAIN | MEAT //EGG = MEAT -NinjaNomNom 2017
+	foodtypes = LEVO | GRAIN | MEAT //EGG = MEAT -NinjaNomNom 2017
 
 /obj/item/food/salad/edensalad
 	name = "\improper Salad of Eden"
@@ -116,7 +116,7 @@
 	icon_state = "edensalad"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 7, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("extreme bitterness" = 3, "hope" = 1)
-	foodtypes = VEGETABLES
+	foodtypes = LEVO | VEGETABLES
 
 /obj/item/food/salad/gumbo
 	name = "black eyed gumbo"
@@ -124,7 +124,7 @@
 	icon_state = "gumbo"
 	food_reagents = list(/datum/reagent/consumable/capsaicin = 2, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/nutriment = 5)
 	tastes = list("building heat" = 2, "savory meat and vegtables" = 1)
-	foodtypes = GRAIN | MEAT | VEGETABLES
+	foodtypes = LEVO | GRAIN | MEAT | VEGETABLES
 
 
 /obj/item/reagent_containers/glass/bowl
